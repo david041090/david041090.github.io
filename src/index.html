@@ -1,0 +1,1220 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kaizen - Instalación de Gas Natural</title>
+    <link rel="stylesheet" href="output.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js"></script>
+
+    <style>
+        .slide {
+            transform: translateX(100%);
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .slide.active {
+            transform: translateX(0);
+        }
+
+        .slide.prev {
+            transform: translateX(-100%);
+        }
+
+        .pt-screen {
+            padding-top: 100vh;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+
+</head>
+
+<body class="bg-gray-50">
+    <!-- Hero Section -->
+    <div class="relative z-50">
+        <section id="inicio" class="absolute top-0 left-0 w-full h-screen">
+            <!-- Slider Container -->
+            <div id="slider-container" class="relative w-full h-full overflow-hidden">
+                <!-- Slide 1 -->
+                <div class="slide absolute w-full h-full transition-transform duration-500 ease-in-out" style="background-image: linear-gradient(rgba(0, 46, 102, 0.95), rgba(0, 46, 102, 0.7)), 
+                url('image/slider/gas_natural.jpg'); background-size: cover; background-position: center;">
+                    <div class="relative w-full h-full flex items-center justify-center text-white text-center">
+                        <div class="max-w-2xl px-4">
+                            <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">
+                                Instalación de Gas Natural
+                            </h1>
+                            <p class="text-lg md:text-xl lg:text-2xl mb-8">
+                                Soluciones profesionales para hogares y empresas
+                            </p>
+                            <a href="contacto.html"
+                                class="bg-white text-blue-600 px-8 py-3 rounded-full font-semibold hover:bg-gray-100 inline-block transition-colors duration-300">
+                                Contáctanos
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Slide 2 -->
+                <div class="slide absolute w-full h-full transition-transform duration-500 ease-in-out"
+                    style="background-image: linear-gradient(rgba(0, 46, 102, 0.95), rgba(0, 46, 102, 0.7)), 
+                url('https://cdn.pixabay.com/photo/2017/09/25/11/55/fittings-2784902_1280.jpg'); background-size: cover; background-position: center;">
+                    <div class="relative w-full h-full flex items-center justify-center text-white text-center">
+                        <div class="max-w-2xl px-4">
+                            <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">
+                                Servicio Certificado
+                            </h1>
+                            <p class="text-lg md:text-xl lg:text-2xl mb-8">
+                                Más de 1800 instalaciones exitosas
+                            </p>
+                            <a href="#certificaciones"
+                                class="bg-white text-blue-600 px-8 py-3 rounded-full font-semibold hover:bg-gray-100 inline-block transition-colors duration-300">
+                                Ver certificaciones
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 2 -->
+                <div class="slide absolute w-full h-full transition-transform duration-500 ease-in-out"
+                    style="background-image: linear-gradient(rgba(0, 46, 102, 0.95), rgba(0, 46, 102, 0.7)), 
+                url('https://media.istockphoto.com/id/1435449607/photo/supervisor-making-a-gas-inspection-at-a-house.jpg?s=2048x2048&w=is&k=20&c=JFFYZ4DIVKRdsnqks3kLs1P7VW4maZsaIwnxET3adrs='); background-size: cover; background-position: center;">
+                    <div class="relative w-full h-full flex items-center justify-center text-white text-center">
+                        <div class="max-w-2xl px-4">
+                            <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">
+                                Trabaja con nosotros.
+                            </h1>
+                            <p class="text-lg md:text-xl lg:text-2xl mb-8">
+                                Genera ingresos con KAIZEN
+                            </p>
+                            <a href="trabaja.html"
+                                class="bg-white text-blue-600 px-8 py-3 rounded-full font-semibold hover:bg-gray-100 inline-block transition-colors duration-300">
+                                Mas información
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 3 -->
+                <div class="slide absolute w-full h-full transition-transform duration-500 ease-in-out"
+                    style="background-image: linear-gradient(rgba(0, 46, 102, 0.95), rgba(0, 46, 102, 0.7)), 
+                url('https://cdn.www.gob.pe/uploads/document/file/6289532/949151-whatsapp-image-2024-04-30-at-2-25-21-pm.jpeg'); background-size: cover; background-position: center;">
+                    <div class="relative w-full h-full flex items-center justify-center text-white text-center">
+                        <div class="max-w-2xl px-4">
+                            <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">
+                                Programa BonoGas
+                            </h1>
+                            <p class="text-lg md:text-xl lg:text-2xl mb-8">
+                                Facilidades de financiamiento para tu instalación
+                            </p>
+                            <a href="https://www.gob.pe/44184-programa-bonogas"
+                                class="bg-white text-blue-600 px-8 py-3 rounded-full font-semibold hover:bg-gray-100 inline-block transition-colors duration-300"
+                                target="_blank">
+                                Conoce más
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Navigation Arrows -->
+                <button id="prev-slide"
+                    class="absolute left-4 top-1/2 -translate-y-1/2 bg-white/30 hover:bg-white/50 z-[60] text-white rounded-full p-2  transition-colors duration-300">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+                    </svg>
+                </button>
+                <button id="next-slide"
+                    class="absolute right-4 top-1/2 -translate-y-1/2 bg-white/30 hover:bg-white/50 z-[60] text-white rounded-full p-2 transition-colors duration-300">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                    </svg>
+                </button>
+
+                <!-- Pagination Dots -->
+                <div class="absolute bottom-4 left-1/2 -translate-x-1/2 z-[40] flex space-x-2">
+                    <button
+                        class="pagination-dot w-3 h-3 rounded-full bg-white/50 hover:bg-white/75 transition-colors duration-300"></button>
+                    <button
+                        class="pagination-dot w-3 h-3 rounded-full bg-white/30 hover:bg-white/75 transition-colors duration-300"></button>
+                    <button
+                        class="pagination-dot w-3 h-3 rounded-full bg-white/30 hover:bg-white/75 transition-colors duration-300"></button>
+                </div>
+            </div>
+
+            <!-- Menú section -->
+            <div
+                class="lg:w-[60%] md:w-[80%]  bg-secondary-500 text-white absolute  left-1/2 transform -translate-x-1/2 z-50 -translate-y-24 hidden md:block">
+                <div class="w-full  mx-auto">
+
+                    <!-- Grid actualizado con iconos de Font Awesome -->
+                    <div class="grid grid-cols-5 divide-x divide-white/20">
+                        <a href="beneficios.html"
+                            class="flex flex-col items-center p-4 hover:bg-[#0088bb] transition-colors duration-300">
+                            <i class="fas fa-home w-6 h-6 flex items-center justify-center"></i>
+                            <div class="text-center mt-2">
+                                <div class="text-xs font-medium">Gas natural</div>
+                                <div class="text-xs opacity-80">y sus beneficios</div>
+                            </div>
+                        </a>
+
+                        <a href="simulador.html"
+                            class="flex flex-col items-center p-4 hover:bg-[#0088bb] transition-colors duration-300">
+                            <i class="fas fa-calculator w-6 h-6 flex items-center justify-center"></i>
+                            <div class="text-center mt-2">
+                                <div class="text-xs font-medium">Simulador de</div>
+                                <div class="text-xs opacity-80">ahorro</div>
+                            </div>
+                        </a>
+
+                        <a href="faq.html"
+                            class="flex flex-col items-center p-4 hover:bg-[#0088bb] transition-colors duration-300">
+                            <i class="fas fa-question-circle w-6 h-6 flex items-center justify-center"></i>
+                            <div class="text-center mt-2">
+                                <div class="text-xs font-medium">Preguntas</div>
+                                <div class="text-xs opacity-80">frecuentes</div>
+                            </div>
+                        </a>
+
+                        <a href="https://www.gob.pe/44184-programa-bonogas"
+                            class="flex flex-col items-center p-4 hover:bg-[#0088bb] transition-colors duration-300"
+                            target="_blank">
+                            <i class="fas fa-check-circle w-6 h-6 flex items-center justify-center"></i>
+                            <div class="text-center mt-2">
+                                <div class="text-xs font-medium">¿Qué es</div>
+                                <div class="text-xs opacity-80">BonoGas?</div>
+                            </div>
+                        </a>
+
+                        <a href="trabaja.html"
+                            class="flex flex-col items-center p-4 hover:bg-secondary-600 transition-colors duration-300">
+                            <i class="fas fa-briefcase w-6 h-6 flex items-center justify-center"></i>
+                            <div class="text-center mt-2">
+                                <div class="text-xs font-medium">Trabaja con</div>
+                                <div class="text-xs opacity-80">nosotros</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!-- ================ NAVEGADORES ============= -->
+    <div class="relative z-50">
+        <!-- Top secondary navigation -->
+        <div class="bg-primary-800 w-full">
+            <div class="max-w-screen-xl mx-auto py-2 px-4">
+                <div class="flex justify-end items-center space-x-6 text-sm text-white">
+                    <!-- Contact Information -->
+                    <div class="flex items-center space-x-4">
+                        <a href="tel:01-6828303" class="hover:text-cyan-400 items-center  hidden md:flex">
+                            <i class="fa-solid fa-phone w-4 h-4 mr-1"></i>
+                            01-6828303
+                        </a>
+                        <a href="tel:959363858" class="hover:text-cyan-400 items-center  hidden md:flex">
+                            <i class="fa-solid fa-phone w-4 h-4 mr-1"></i>
+                            959 363 858
+                        </a>
+                        <a href="mailto:info@kaizen.com" class="hover:text-cyan-400 flex items-center">
+                            <i class="fa-solid fa-envelope w-4 h-4 mr-1"></i>
+                            info@kaizen.com
+                        </a>
+                    </div>
+                    <!-- Social Media Links -->
+                    <div class="flex items-center space-x-4">
+                        <a href="https://www.facebook.com/profile.php?id=100078954631590" class="hover:text-cyan-400"
+                            target="_blank">
+                            <i class="fa-brands fa-facebook w-4 h-4"></i>
+                        </a>
+                        <a href="https://www.instagram.com/gkaizen.ic?igsh=NzR0bnlza3ZrMGJv" class="hover:text-cyan-400"
+                            target="_blank">
+                            <i class="fa-brands fa-instagram w-4 h-4"></i>
+                        </a>
+                        <a href="#" class="hover:text-cyan-400">
+                            <i class="fa-brands fa-youtube w-4 h-4"></i>
+                        </a>
+                        <a href="#" class="hover:text-cyan-400">
+                            <i class="fa-brands fa-linkedin w-4 h-4"></i>
+                        </a>
+                        <a href="#" class="hover:text-cyan-400">
+                            <i class="fa-brands fa-tiktok w-4 h-4"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ==== Main navigation - now with sticky behavior ===== -->
+        <nav id="main-nav" class="bg-gradient-to-b from-primary-700 to-primary-500 w-full  transition-all duration-300">
+            <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-2">
+                <a href="#" class="flex items-center space-x-3">
+                    <img src="image/logodark.png" alt="Logo Kaizen" class="self-center h-8" />
+                    <!-- Ajusta la ruta y el tamaño (h-8) según necesites -->
+                </a>
+                <!-- Mobile menu button -->
+                <button id="menu-toggle" class="md:hidden p-2 text-gray-50 hover:bg-gray-100 rounded-lg">
+                    <i class="fa-solid fa-bars w-6 h-6"></i>
+                </button>
+                <!-- Navigation menu -->
+                <div id="mobile-menu" class="hidden md:block w-full md:w-auto">
+                    <ul class="flex flex-col md:flex-row md:space-x-8 mt-4 md:mt-0">
+                        <li>
+                            <a href="#inicio" class="block py-2 pl-3 pr-4 text-complemento-500">Inicio</a>
+                        </li>
+                        <li>
+                            <a href="#nosotros"
+                                class="block py-2 pl-3 pr-4 text-gray-50 hover:text-complemento-500">Nosotros</a>
+                        </li>
+                        <li>
+                            <a href="#servicios"
+                                class="block py-2 pl-3 pr-4 text-gray-50 hover:text-complemento-500">Instalación</a>
+                        </li>
+                        <li>
+                            <a href="#certificaciones"
+                                class="block py-2 pl-3 pr-4 text-gray-50 hover:text-complemento-500">Certificaciones</a>
+                        </li>
+                        <li>
+                            <a href="#clientes"
+                                class="block py-2 pl-3 pr-4 text-gray-50 hover:text-complemento-500">Clientes</a>
+                        </li>
+                        <li>
+                            <a href="galeria.html"
+                                class="block py-2 pl-3 pr-4 text-gray-50 hover:text-complemento-500">Galeria</a>
+                        </li>
+                        <li>
+                            <a href="contacto.html"
+                                class="block py-2 pl-3 pr-4 text-gray-50 hover:text-complemento-500">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+    </div>
+
+    <!-- ================Botón de WhatsApp con Tooltip================ -->
+    <div class="fixed bottom-6 right-6 z-50 flex items-center group">
+        <!-- Tooltip/Mensaje -->
+        <div id="whatsapp-tooltip"
+            class="hidden bg-green-500 text-white px-4 py-2 rounded-lg shadow-lg whitespace-nowrap absolute right-[calc(100%+12px)] transition-opacity duration-300">
+            Chatea con nosotros
+            <!-- Flecha del tooltip -->
+            <div class="absolute top-1/2 right-[-6px] transform -translate-y-1/2 w-3 h-3 bg-green-500 rotate-45">
+            </div>
+        </div>
+
+        <!-- Botón de WhatsApp -->
+        <a href="https://api.whatsapp.com/send?phone=51999393895&text=¡Hola!%20Me%20gustaría%20obtener%20más%20información."
+            target="_blank" id="whatsapp-button"
+            class="bg-green-500 hover:bg-green-600 text-white rounded-full p-2 shadow-lg transition-all duration-300 hover:scale-110 z-[9999] cursor-pointer">
+            <i class="fab fa-whatsapp w-10 h-10 text-2xl"></i>
+        </a>
+    </div>
+
+
+    <!-- ================ CONTENDOR MAIN ============= -->
+
+    <main class="relative z-auto pt-[90vh] h-screen">
+        <div class="md:hidden w-full bg-[#00A0DC] text-white mt-screen">
+            <div class="grid grid-cols-1 divide-y divide-white/20">
+                <!-- Same menu items as above, but stacked -->
+                <a href="beneficios.html"
+                    class="flex items-center p-4 hover:bg-[#0088bb] transition-colors duration-300">
+                    <svg class="w-6 h-6 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+                    </svg>
+                    <div>
+                        <div class="text-sm font-medium">Gas natural y sus beneficios</div>
+                    </div>
+                </a>
+
+                <a href="simulador.html"
+                    class="flex items-center p-4 hover:bg-[#0088bb] transition-colors duration-300">
+                    <svg class="w-6 h-6 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                    <div>
+                        <div class="text-sm font-medium">Simulador de ahorro</div>
+                    </div>
+                </a>
+                <a href="faq.html"
+                    class="flex items-center p-4 hover:bg-[#0088bb] transition-colors duration-300">
+                    <svg class="w-6 h-6 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                    <div>
+                        <div class="text-sm font-medium">Preguntas frecuentas</div>
+                    </div>
+                </a>
+
+                <a href="https://www.gob.pe/44184-programa-bonogas"
+                    class="flex items-center p-4 hover:bg-[#0088bb] transition-colors duration-300">
+                    <svg class="w-6 h-6 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                    <div>
+                        <div class="text-sm font-medium">¿Qué es BonoGas?</div>
+                    </div>
+                </a>
+                <a href="trabaja.html" class="flex items-center p-4 hover:bg-[#0088bb] transition-colors duration-300">
+                    <svg class="w-6 h-6 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                    </svg>
+                    <div>
+                        <div class="text-sm font-medium">Trabaja con nosotros</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <!-- Nosotros Section -->
+        <section id="nosotros" class="py-28">
+            <div class="max-w-screen-xl mx-auto px-4">
+                <h2 class="text-3xl font-bold text-center mb-12">Nosotros</h2>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div>
+                        <h3 class="text-2xl font-semibold mb-4">Quiénes Somos</h3>
+                        <p class="text-gray-600 mb-4">
+                            Somos una empresa multidisciplinaria que brinda servicio de
+                            diseño, supervisión y ejecución de obras para las instalaciones de
+                            gas natural en residencias, comercios, edificios, multifamiliares
+                            e industrias con total garantía en calidad y seguridad.
+                        </p>
+                        <p class="text-gray-600">
+                            Contamos con el convenio BonoGas del Ministerio de Energía y
+                            Minas y el sector privado, con profesionales con más de 20 años de
+                            experiencia en el sector energético registrados en Osinergmin.
+                        </p>
+                        <!-- Component: Accordion for Misión, Visión, Valores -->
+                        <div
+                            class="w-full max-w-2xl mt-4 mx-auto bg-white rounded-xl shadow-sm border border-slate-200 divide-y divide-slate-200">
+                            <!-- Mission Section -->
+                            <details class="group">
+                                <summary
+                                    class="flex items-center justify-between w-full p-6 text-left cursor-pointer focus:outline-none">
+                                    <div class="flex items-center gap-4">
+                                        <div class="p-2 rounded-lg bg-blue-50">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-primary-700"
+                                                fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                    d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z" />
+                                            </svg>
+                                        </div>
+                                        <span class="text-lg font-semibold text-slate-900">Misión</span>
+                                    </div>
+                                    <svg class="w-5 h-5 text-slate-500 transition-transform duration-300 group-open:rotate-180"
+                                        fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M19 9l-7 7-7-7" />
+                                    </svg>
+                                </summary>
+                                <div class="p-6 pt-0">
+                                    <p class="text-slate-600 leading-relaxed">
+                                        Nos dedicamos a proporcionar soluciones innovadoras y de alta calidad que
+                                        transforman la manera en que nuestros clientes interactúan con la tecnología.
+                                        Nos esforzamos por crear un impacto positivo y duradero en cada proyecto que
+                                        emprendemos.
+                                    </p>
+                                </div>
+                            </details>
+
+                            <!-- Vision Section -->
+                            <details class="group">
+                                <summary
+                                    class="flex items-center justify-between w-full p-6 text-left cursor-pointer focus:outline-none">
+                                    <div class="flex items-center gap-4">
+                                        <div class="p-2 rounded-lg bg-purple-50">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-secondary-500"
+                                                fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                    d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                    d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+                                            </svg>
+                                        </div>
+                                        <span class="text-lg font-semibold text-slate-900">Visión</span>
+                                    </div>
+                                    <svg class="w-5 h-5 text-slate-500 transition-transform duration-300 group-open:rotate-180"
+                                        fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M19 9l-7 7-7-7" />
+                                    </svg>
+                                </summary>
+                                <div class="p-6 pt-0">
+                                    <p class="text-slate-600 leading-relaxed">
+                                        Aspiramos a ser líderes globales en innovación tecnológica, estableciendo nuevos
+                                        estándares de excelencia y creando soluciones que inspiren y empoderen a las
+                                        futuras generaciones.
+                                    </p>
+                                </div>
+                            </details>
+
+                            <!-- Values Section -->
+                            <details class="group">
+                                <summary
+                                    class="flex items-center justify-between w-full p-6 text-left cursor-pointer focus:outline-none">
+                                    <div class="flex items-center gap-4">
+                                        <div class="p-2 rounded-lg bg-green-50">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-green-600"
+                                                fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                    d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
+                                            </svg>
+                                        </div>
+                                        <span class="text-lg font-semibold text-slate-900">Valores</span>
+                                    </div>
+                                    <svg class="w-5 h-5 text-slate-500 transition-transform duration-300 group-open:rotate-180"
+                                        fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M19 9l-7 7-7-7" />
+                                    </svg>
+                                </summary>
+                                <div class="p-6 pt-0">
+                                    <ul class="space-y-4 text-slate-600">
+                                        <li class="flex items-start gap-3">
+                                            <div class="mt-2">
+                                                <div class="w-1.5 h-1.5 rounded-full bg-green-600"></div>
+                                            </div>
+                                            <div>
+                                                <span class="font-medium text-slate-900">Integridad</span>
+                                                <p class="mt-1">Actuamos con honestidad y transparencia en todas
+                                                    nuestras interacciones, manteniendo los más altos estándares éticos.
+                                                </p>
+                                            </div>
+                                        </li>
+                                        <li class="flex items-start gap-3">
+                                            <div class="mt-2">
+                                                <div class="w-1.5 h-1.5 rounded-full bg-green-600"></div>
+                                            </div>
+                                            <div>
+                                                <span class="font-medium text-slate-900">Innovación</span>
+                                                <p class="mt-1">Buscamos constantemente nuevas formas de resolver
+                                                    problemas y crear soluciones que marquen la diferencia.</p>
+                                            </div>
+                                        </li>
+                                        <li class="flex items-start gap-3">
+                                            <div class="mt-2">
+                                                <div class="w-1.5 h-1.5 rounded-full bg-green-600"></div>
+                                            </div>
+                                            <div>
+                                                <span class="font-medium text-slate-900">Excelencia</span>
+                                                <p class="mt-1">Nos esforzamos por alcanzar los más altos niveles de
+                                                    calidad en todo lo que hacemos.</p>
+                                            </div>
+                                        </li>
+                                        <li class="flex items-start gap-3">
+                                            <div class="mt-2">
+                                                <div class="w-1.5 h-1.5 rounded-full bg-green-600"></div>
+                                            </div>
+                                            <div>
+                                                <span class="font-medium text-slate-900">Colaboración</span>
+                                                <p class="mt-1">Trabajamos juntos como equipo, valorando las diferentes
+                                                    perspectivas y habilidades de cada miembro.</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </details>
+                        </div>
+
+                    </div>
+                    <div class=" rounded-lg h-64 md:h-auto">
+                        <!-- Placeholder for image -->
+
+                        <div class="w-full h-full flex items-center justify-center text-gray-500">
+                            <img src="https://cdn.pixabay.com/photo/2020/01/27/10/24/pollution-4796858_1280.jpg" alt="">
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- members teams  equipo -->
+                <div class="py-16 bg-gray-50 -mx-4 px-4">
+                    <div class="max-w-screen-xl mx-auto">
+                        <h2 class="text-3xl font-bold text-center mb-4">Nuestro Equipo</h2>
+                        <p class="text-gray-600 text-center mb-12 max-w-2xl mx-auto">
+                            Contamos con profesionales altamente calificados y comprometidos con la excelencia en cada
+                            proyecto que emprendemos.
+                        </p>
+
+                        <div class="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                            <!-- Team Member 1 -->
+                            <div
+                                class="bg-white rounded-xl shadow-sm overflow-hidden transition-transform duration-300 hover:-translate-y-1">
+                                <div class="aspect-w-1 aspect-h-1">
+                                    <img src="/src/image/team/team.webp" alt="Team member"
+                                        class="w-full h-full object-cover">
+                                </div>
+                                <div class="p-6">
+                                    <h3 class="text-lg font-semibold text-gray-900">Juan Pérez</h3>
+                                    <p class="text-primary-600 font-medium">Director General</p>
+                                    <p class="text-gray-500 text-sm mt-2">Lima, Perú</p>
+                                </div>
+                            </div>
+
+                            <!-- Team Member 2 -->
+                            <div
+                                class="bg-white rounded-xl shadow-sm overflow-hidden transition-transform duration-300 hover:-translate-y-1">
+                                <div class="aspect-w-1 aspect-h-1">
+                                    <img src="/src/image/team/team.webp" alt="Team member"
+                                        class="w-full h-full object-cover">
+                                </div>
+                                <div class="p-6">
+                                    <h3 class="text-lg font-semibold text-gray-900">María García</h3>
+                                    <p class="text-primary-600 font-medium">Gerente de Operaciones</p>
+                                    <p class="text-gray-500 text-sm mt-2">Lima, Perú</p>
+                                </div>
+                            </div>
+
+                            <!-- Team Member 3 -->
+                            <div
+                                class="bg-white rounded-xl shadow-sm overflow-hidden transition-transform duration-300 hover:-translate-y-1">
+                                <div class="aspect-w-1 aspect-h-1">
+                                    <img src="/src/image/team/team.webp" alt="Team member"
+                                        class="w-full h-full object-cover">
+                                </div>
+                                <div class="p-6">
+                                    <h3 class="text-lg font-semibold text-gray-900">Carlos Ruiz</h3>
+                                    <p class="text-primary-600 font-medium">Jefe de Ingeniería</p>
+                                    <p class="text-gray-500 text-sm mt-2">Lima, Perú</p>
+                                </div>
+                            </div>
+
+                            <!-- Team Member 4 -->
+                            <div
+                                class="bg-white rounded-xl shadow-sm overflow-hidden transition-transform duration-300 hover:-translate-y-1">
+                                <div class="aspect-w-1 aspect-h-1">
+                                    <img src="/src/image/team/team.webp" alt="Team member"
+                                        class="w-full h-full object-cover">
+                                </div>
+                                <div class="p-6">
+                                    <h3 class="text-lg font-semibold text-gray-900">Ana Torres</h3>
+                                    <p class="text-primary-600 font-medium">Supervisora de Proyectos</p>
+                                    <p class="text-gray-500 text-sm mt-2">Lima, Perú</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Servicios Section estilo Vento Grid -->
+        <section id="servicios" class="bg-primary-700 py-20 ">
+            <div class="max-w-screen-xl mx-auto px-4">
+                <h2 class="text-4xl text-gray-50 font-bold text-center mb-16">Instalaciones </h2>
+                <p class="text-gray-50 text-center mb-12 max-w-2xl mx-auto">
+                    Ofrecemos instalaciones de gas natural adaptadas a tus necesidades específicas, garantizando
+                    eficiencia y seguridad. Nuestro equipo de expertos se encarga de cada etapa del proceso, desde la
+                    evaluación inicial hasta la ejecución, utilizando materiales de alta calidad y cumpliendo con las
+                    normativas vigentes. Somos una organización certificada por
+                    <span class="text-complemento-300 font-extrabold">Osinergmin</span> y
+                    <span class="text-complemento-300 font-extrabold">Bureao Veritas</span>.
+                </p>
+
+
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 mb-4 gap-8">
+                    <!-- Tarjeta Residencial -->
+                    <div
+                        class="group bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-500 h-full">
+                        <div class="p-6 flex flex-col justify-center  h-full">
+                            <div class="flex items-center w-24 h-24 mb-4 mx-auto">
+                                <img src="image/svg/house.svg" alt="Ícono Residencial"
+                                    class="w-20 h-20 filter invert-[15%] sepia-[90%] saturate-[500%]" />
+                            </div>
+                            <h3
+                                class="text-2xl text-center font-semibold mb-4  group-hover:text-primary-700 transition-colors duration-300">
+                                Residencial
+                            </h3>
+                            <p class="text-gray-600 mb-6 flex-grow">
+                                Instalación de gas para tu hogar con total seguridad y garantía.
+                            </p>
+
+                            <!-- Botón alineado al fondo -->
+                            <a href="instlaciones.html" class="w-full text-center bg-primary-50 text-primary-600 font-bold border border-primary-600 
+                                  py-2 rounded-lg transition-all duration-300 
+                                  hover:bg-primary-600 hover:text-white">
+                                Más información →
+                            </a>
+                        </div>
+                    </div>
+
+
+                    <!-- Tarjeta Comercial -->
+                    <div
+                        class="group bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-500 h-full">
+                        <div class="p-6 flex flex-col justify-center h-full">
+                            <div class="flex items-center w-24 h-24  mb-4 mx-auto">
+                                <img src="image/svg/shop.svg" alt="Ícono Residencial"
+                                    class="w-20 h-20 filter invert-[15%] sepia-[90%] saturate-[500%]" />
+                            </div>
+                            <h3
+                                class="text-2xl text-center font-semibold mb-4 group-hover:text-primary-700 transition-colors duration-300">
+                                Comercial
+                            </h3>
+                            <p class="text-gray-600 mb-6 flex-grow">
+                                Soluciones de gas natural para negocios y establecimientos comerciales.
+                            </p>
+
+                            <!-- Botón alineado al fondo -->
+                            <a href="instlaciones.html" class="w-full text-center bg-primary-50 text-primary-600 font-bold border border-primary-600 
+                                  py-2 rounded-lg transition-all duration-300 
+                                  hover:bg-primary-600 hover:text-white">
+                                Más información →
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Tarjeta Multifamiliar -->
+                    <div
+                        class="group bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-500 h-full">
+                        <div class="p-6 flex flex-col justify-center h-full">
+                            <div class="flex items-center w-24 h-24  mb-4 mx-auto">
+                                <img src="image/svg/multifamiliar.svg" alt="Ícono Residencial"
+                                    class="w-20 h-20 filter invert-[15%] sepia-[90%] saturate-[500%]" />
+                            </div>
+                            <h3
+                                class="text-2xl text-center font-semibold mb-4 group-hover:text-primary-700 transition-colors duration-300">
+                                Multifamiliar
+                            </h3>
+                            <p class="text-gray-600 mb-6 flex-grow">
+                                Sistemas centralizados para edificios y condominios.
+                            </p>
+
+                            <!-- Botón alineado al fondo -->
+                            <a href="instlaciones.html" class="w-full text-center bg-primary-50 text-primary-600 font-bold border border-primary-600 
+                                  py-2 rounded-lg transition-all duration-300 
+                                  hover:bg-primary-600 hover:text-white">
+                                Más información →
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Tarjeta Industrial -->
+                    <div
+                        class="group bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-500 h-full">
+                        <div class="p-6 flex flex-col justify-center h-full">
+                            <div class="flex items-center w-24 h-24  mb-4 mx-auto">
+                                <img src="image/svg/factory.svg" alt="Ícono Residencial"
+                                    class="w-20 h-20 filter invert-[15%] sepia-[90%] saturate-[500%]" />
+                            </div>
+                            <h3
+                                class="text-2xl text-center font-semibold mb-4 group-hover:text-primary-700 transition-colors duration-300">
+                                Industrial
+                            </h3>
+                            <p class="text-gray-600 mb-6 flex-grow">
+                                Instalaciones de alta capacidad para el sector industrial.
+                            </p>
+
+                            <!-- Botón alineado al fondo -->
+                            <a href="instlaciones.html" class="w-full text-center bg-primary-50 text-primary-600 font-bold border border-primary-600 
+                                  py-2 rounded-lg transition-all duration-300 
+                                  hover:bg-primary-600 hover:text-white">
+                                Más información →
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Servicios Clientes -->
+        <section id="certificaciones" class="w-screen py-20 bg-white">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold text-center mb-8">Instituciones que nos respaldan</h2>
+
+                <!-- Sección Responsive con Tailwind CSS -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-4">
+
+                    <!-- Tarjeta OSINERGMIN -->
+                    <div class="flex   border border-gray-100 rounded-lg shadow-lg overflow-hidden">
+                        <!-- Columna del Logo -->
+                        <div class="flex items-center justify-center p-4 bg-white w-1/3">
+                            <img src="/src/image/asinergmin.png" alt="Logo Osinergmin" class="w-50">
+                        </div>
+                        <!-- Columna del Texto y Botón -->
+                        <div class="flex flex-col justify-center p-6 bg-gray-100 w-2/3">
+                            <h3 class="font-bold text-lg text-slate-800">Certificado con la categoría IG-3</h3>
+                            <p class="text-slate-600 text-sm mt-2">
+                                Permite diseñar, supervisar, construir, reparar, modificar, revisar y mantener
+                                instalaciones de gas natural.
+                            </p>
+                            <button
+                                class="mt-4 px-4 py-2 bg-cyan-400 text-black font-bold rounded hover:bg-cyan-300 transition duration-300">
+                                VERIFICAR CERTIFICACIÓN
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Tarjeta BUREAU VERITAS -->
+                    <div class="flex bg-white border border-gray-100 rounded-lg shadow-lg overflow-hidden">
+                        <!-- Columna del Logo -->
+                        <div class="flex items-center justify-center p-4 bg-white w-1/3">
+                            <img src="/src/image/veritas.png" alt="Logo Bureau Veritas" class="w-50">
+                        </div>
+                        <!-- Columna del Texto y Botón -->
+                        <div class="flex flex-col justify-center p-6 bg-gray-100 w-2/3">
+                            <h3 class="font-bold text-lg text-slate-800">Certificado que permite.</h3>
+                            <p class="text-slate-600 text-sm mt-2">
+                                Cumplan las normas técnicas, seguridad, salud y sostenibilidad de proyectos, procesos e
+                                impacto medioambiental.
+                            </p>
+                            <button
+                                class="mt-4 px-4 py-2 bg-cyan-400 text-black font-bold rounded hover:bg-cyan-300 transition duration-300">
+                                VERIFICAR CERTIFICACIÓN
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Servicios Clientes -->
+        <section id="clientes" class="w-screen py-20 bg-gray-100">
+            <div class="container mx-auto px-4">
+                <!-- CONTADOR DINAMICO de instalaciones -->
+                <div class="text-center relative max-w-3xl mx-auto px-4">
+                    <!-- Contenedor principal con efectos de fondo -->
+                    <div class="flex flex-col items-center gap-4 py-8 relative">
+                        <!-- Elementos decorativos de fondo -->
+                        <div class="absolute inset-0 bg-gradient-to-r rounded-3xl opacity-70"></div>
+
+                        <!-- Título superior -->
+                        <div class="text-2xl text-gray-600 font-semibold relative">
+                            Más de
+                            <div class="absolute -right-6 -top-1 text-complemento-500 animate-pulse">★</div>
+                        </div>
+
+                        <!-- Contenedor del contador con iconos -->
+                        <div class="relative px-12">
+                            <!-- Iconos decorativos - posiciones ajustadas -->
+                            <span
+                                class="absolute -left-6 -top-6 text-complemento-500 opacity-30 text-6xl transform -rotate-12">✦</span>
+                            <span
+                                class="absolute -left-2 top-1/2 text-complemento-600 opacity-20 text-4xl animate-pulse">●</span>
+                            <span
+                                class="absolute -right-6 -bottom-6 text-complemento-500 opacity-30 text-6xl transform rotate-12">✦</span>
+                            <span
+                                class="absolute -right-2 top-1/2 text-complemento-600 opacity-20 text-4xl animate-pulse">●</span>
+
+                            <!-- Número del contador -->
+                            <span id="counter"
+                                class="text-8xl font-black bg-gradient-to-r from-primary-600 to-secondary-600 text-transparent bg-clip-text relative z-10 drop-shadow-xl">0</span>
+                            <!-- Pequeños detalles adicionales -->
+                            <span class="absolute -top-4 right-0 text-complemento-500 text-xl animate-bounce">+</span>
+                        </div>
+
+                        <!-- Texto inferior -->
+                        <div class="relative">
+                            <div class="text-3xl font-bold text-gray-700">
+                                instalaciones realizadas en Lima
+                                <!-- Línea decorativa -->
+                                <div
+                                    class="h-1 w-32 bg-gradient-to-r from-primary-600 to-secondary-600 mx-auto mt-3 rounded-full">
+                                </div>
+                            </div>
+                            <!-- Iconos pequeños adicionales -->
+                            <span class="absolute -left-6 bottom-0 text-green-400 text-sm opacity-40">◆</span>
+                            <span class="absolute -right-6 bottom-0 text-green-400 text-sm opacity-40">◆</span>
+                        </div>
+                    </div>
+
+                    <!-- Detalles de esquina -->
+                    <div class="absolute -top-4 -left-4 text-green-400 opacity-20 text-4xl">◈</div>
+                    <div class="absolute -bottom-4 -right-4 text-green-400 opacity-20 text-4xl">◈</div>
+                </div>
+
+                <!-- CONTADOR DINAMICO de instalaciones -->
+
+                <h2 class="text-3xl font-bold text-center mb-8">Clientes que confian en nosotros</h2>
+
+                <div class="max-w-full overflow-hidden px-4">
+                    <div class="relative w-full glide-clientes">
+                        <div class="overflow-hidden" data-glide-el="track">
+                            <ul class="whitespace-nowrap flex relative w-full p-0">
+                                <!-- Slides -->
+                                <li class="flex items-center justify-center px-4">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6c/PCM-Energia-y-Minas.png"
+                                        alt="Ministerio de Energía y Minas"
+                                        class="w-auto h-16 md:h-20 object-contain" />
+                                </li>
+                                <li class="flex items-center justify-center px-4">
+                                    <img src="https://revistagptwperu.com/wp-content/uploads/2023/02/Logo-calidda-1000px-2048x647.png"
+                                        alt="Calidda" class="w-auto h-16 md:h-20 object-contain" />
+                                </li>
+                                <li class="flex items-center justify-center px-4">
+                                    <img src="https://www.indupanec.com/wp-content/uploads/2024/09/Captura-de-pantalla-2024-09-01-180242.png"
+                                        alt="Indupanec" class="w-auto h-16 md:h-20 object-contain" />
+                                </li>
+                                <li class="flex items-center justify-center px-4">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6c/PCM-Energia-y-Minas.png"
+                                        alt="Logo 4" class="w-auto h-16 md:h-20 object-contain" />
+                                </li>
+                                <li class="flex items-center justify-center px-4">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6c/PCM-Energia-y-Minas.png"
+                                        alt="Logo 5" class="w-auto h-16 md:h-20 object-contain" />
+                                </li>
+                                <li class="flex items-center justify-center px-4">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6c/PCM-Energia-y-Minas.png"
+                                        alt="Logo 6" class="w-auto h-16 md:h-20 object-contain" />
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="bg-primary-800 text-white py-8 px-6 text-sm">
+            <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
+
+                <!-- Columna 1: Mapa de ubicación -->
+                <div>
+                    <h3 class="font-bold">UBICACIÓN</h3>
+                    <div class="mt-4">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d867.7805430897275!2d-76.98246779320944!3d-12.078488156171447!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTLCsDA0JzQyLjgiUyA3NsKwNTgnNTUuNSJX!5e1!3m2!1ses-419!2spe!4v1737578493213!5m2!1ses-419!2spe"
+                            width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+
+                <!-- Columna 2: Información de la empresa, Teléfonos y Redes Sociales -->
+                <div class="max-w-2xl mx-auto p-8">
+                    <!-- Encabezado -->
+                    <div class="text-center mb-8">
+                        <h3 class="text-3xl font-bold mb-2">GRUPO KAIZEN</h3>
+                    </div>
+
+                    <!-- Grid de información de contacto -->
+                    <div class="grid md:grid-cols-2 gap-6 mb-8">
+                        <!-- Columna izquierda -->
+                        <div class="space-y-4">
+                            <div class="p-4 rounded-lg">
+                                <p class="flex items-center">
+                                    <i class="fas fa-map-marker-alt w-6 h-6 mr-3"></i>
+                                    <span class="text-sm">Jr. Bartolomé Ruiz 293, Urb. Salamanca de Monterrico,
+                                        Ate</span>
+                                </p>
+                            </div>
+                            <div class="p-4 rounded-lg">
+                                <p class="flex items-center">
+                                    <i class="fas fa-envelope w-6 h-6 mr-3"></i>
+                                    <a href="mailto:info@kaizen.com" class="text-sm hover:underline">info@kaizen.com</a>
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Columna derecha -->
+                        <div class="space-y-4">
+                            <div class="p-4 rounded-lg">
+                                <p class="flex items-center">
+                                    <i class="fas fa-phone w-6 h-6 mr-3"></i>
+                                    <span>
+                                        <span class="text-sm text-gray-50">Central Telefónica</span>
+                                        <span class="block text-sm">01-6828303</span>
+                                    </span>
+                                </p>
+                            </div>
+                            <div class="p-4 rounded-lg">
+                                <p class="flex items-center">
+                                    <i class="fab fa-whatsapp w-6 h-6 mr-3"></i>
+                                    <span>
+                                        <span class="text-sm text-gray-50">WhatsApp/Celular</span>
+                                        <span class="block text-sm">959363858</span>
+                                    </span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Redes sociales -->
+                    <div class="text-center">
+                        <h3 class="text-2xl font-bold mb-6">SÍGUENOS</h3>
+                        <div class="flex justify-center items-center gap-6">
+                            <a href="#" class="hover:opacity-75">
+                                <i class="fab fa-linkedin text-2xl"></i>
+                                <span class="sr-only">LinkedIn</span>
+                            </a>
+                            <a href="#" class="hover:opacity-75">
+                                <i class="fab fa-facebook text-2xl"></i>
+                                <span class="sr-only">Facebook</span>
+                            </a>
+                            <a href="#" class="hover:opacity-75">
+                                <i class="fab fa-instagram text-2xl"></i>
+                                <span class="sr-only">Instagram</span>
+                            </a>
+                            <a href="#" class="hover:opacity-75">
+                                <i class="fab fa-youtube text-2xl"></i>
+                                <span class="sr-only">YouTube</span>
+                            </a>
+                            <a href="#" class="hover:opacity-75">
+                                <i class="fab fa-tiktok text-2xl"></i>
+                                <span class="sr-only">TikTok</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Línea divisoria -->
+            <div class="border-t border-gray-400 mt-8 pt-4 text-center text-xs">
+                ©2025 KAIZEN - Todos los derechos reservados.
+            </div>
+        </footer>
+
+    </main>
+
+
+    <!-- Scripts-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.0.2/glide.js"></script>
+
+    <!-- START SCRTIP whatsapp-->
+    <script>
+        // Control del tooltip
+        const tooltip = document.getElementById('whatsapp-tooltip');
+        const showTooltip = () => tooltip.classList.replace('hidden', 'block');
+        const hideTooltip = () => tooltip.classList.replace('block', 'hidden');
+
+        // Función para mostrar el tooltip por 5 segundos
+        const displayTooltip = () => {
+            showTooltip();
+            setTimeout(hideTooltip, 5000); // Ocultar después de 5 segundos
+        };
+
+        // Mostrar tooltip al cargar la página
+        document.addEventListener('DOMContentLoaded', () => {
+            setTimeout(displayTooltip, 1000); // Mostrar después de 1 segundo de carga
+        });
+        // Mostrar tooltip cada 5 minutos
+        setInterval(displayTooltip, 300000); // 300000 ms = 5 minutos
+
+        // Mantener el comportamiento del hover
+        const whatsappContainer = tooltip.parentElement;
+        whatsappContainer.addEventListener('mouseenter', showTooltip);
+        whatsappContainer.addEventListener('mouseleave', hideTooltip);
+    </script>
+
+    <!-- START SCRTIP ANIAMCION CONTADOR-->
+    <script>
+        // Función para animar el contador
+        function animateCounter(element, target, duration = 2000) {
+            let start = 0;
+            const increment = target / (duration / 16);
+            const startTime = performance.now();
+
+            function update(currentTime) {
+                const elapsed = currentTime - startTime;
+                const progress = Math.min(elapsed / duration, 1);
+
+                // Aceleración al inicio y desaceleración al final
+                const easeOutQuad = 1 - Math.pow(1 - progress, 2);
+
+                start = Math.floor(target * easeOutQuad);
+                element.textContent = start.toLocaleString();
+
+                if (progress < 1) {
+                    requestAnimationFrame(update);
+                }
+            }
+
+            requestAnimationFrame(update);
+        }
+
+        // Configurar el Intersection Observer
+        document.addEventListener('DOMContentLoaded', () => {
+            const counter = document.getElementById('counter');
+            let hasAnimated = false;
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting && !hasAnimated) {
+                        animateCounter(counter, 1800);
+                        hasAnimated = true;
+                        observer.disconnect(); // Desconectar después de la primera animación
+                    }
+                });
+            }, {
+                threshold: 0.1 // Se activará cuando al menos 10% del elemento sea visible
+            });
+
+            observer.observe(counter);
+        });
+    </script>
+
+    <!-- START SCRIPT NAV -->
+    <script>
+        // Get the navbar
+        const mainNav = document.getElementById("main-nav");
+        const topNav = mainNav.previousElementSibling;
+        const mobileMenu = document.getElementById("mobile-menu");
+        const menuToggle = document.getElementById("menu-toggle");
+        let lastScrollY = window.scrollY;
+
+        // Get the height of the top navigation
+        const topNavHeight = topNav.offsetHeight;
+
+        // Function to collapse mobile menu
+        const collapseMobileMenu = () => {
+            mobileMenu.classList.add("hidden");
+        };
+
+        // Add scroll event listener
+        window.addEventListener("scroll", function () {
+            const currentScrollY = window.scrollY;
+
+            if (currentScrollY > topNavHeight) {
+                // Scrolling down past the top nav
+                mainNav.classList.add("fixed", "top-0", "shadow-md", "z-50");
+                document.body.style.paddingTop = mainNav.offsetHeight + "px";
+            } else {
+                // Scrolling back up
+                mainNav.classList.remove("fixed", "top-0", "shadow-md", "z-50");
+                document.body.style.paddingTop = "0";
+            }
+
+            lastScrollY = currentScrollY;
+        });
+
+        // Mobile menu toggle
+        menuToggle.addEventListener("click", () => {
+            mobileMenu.classList.toggle("hidden");
+        });
+
+        // Add click event listeners to all menu items
+        const menuItems = mobileMenu.querySelectorAll('a');
+        menuItems.forEach(item => {
+            item.addEventListener('click', () => {
+                collapseMobileMenu();
+            });
+        });
+
+        // Optional: Close menu when clicking outside
+        document.addEventListener('click', (event) => {
+            const isClickInsideMenu = mobileMenu.contains(event.target);
+            const isClickOnToggle = menuToggle.contains(event.target);
+
+            if (!isClickInsideMenu && !isClickOnToggle && !mobileMenu.classList.contains('hidden')) {
+                collapseMobileMenu();
+            }
+        });
+    </script>
+    <!-- END SCRIPT NAV -->
+
+    <!-- START SCRIPT  SLIDER -->
+    <script>
+        // SCRIPT SLIDE
+        document.addEventListener("DOMContentLoaded", function () {
+            const slider = {
+                container: document.getElementById("slider-container"),
+                slides: Array.from(document.querySelectorAll(".slide")),
+                prevButton: document.getElementById("prev-slide"),
+                nextButton: document.getElementById("next-slide"),
+                dots: Array.from(document.querySelectorAll(".pagination-dot")),
+                currentIndex: 0,
+
+                init() {
+                    this.slides[0].classList.add("active");
+                    this.dots[0].classList.add("bg-white/50");
+                    this.addEventListeners();
+                    this.updateSlidePositions();
+                },
+
+                addEventListeners() {
+                    this.prevButton.addEventListener("click", () => this.prevSlide());
+                    this.nextButton.addEventListener("click", () => this.nextSlide());
+                    this.dots.forEach((dot, index) => {
+                        dot.addEventListener("click", () => this.goToSlide(index));
+                    });
+
+                    // Touch events
+                    let touchStartX = 0;
+                    let touchEndX = 0;
+
+                    this.container.addEventListener("touchstart", (e) => {
+                        touchStartX = e.changedTouches[0].screenX;
+                    });
+
+                    this.container.addEventListener("touchend", (e) => {
+                        touchEndX = e.changedTouches[0].screenX;
+                        if (touchStartX - touchEndX > 50) {
+                            this.nextSlide();
+                        } else if (touchEndX - touchStartX > 50) {
+                            this.prevSlide();
+                        }
+                    });
+                },
+
+                updateSlidePositions() {
+                    this.slides.forEach((slide, index) => {
+                        if (index === this.currentIndex) {
+                            slide.classList.add("active");
+                            slide.classList.remove("prev");
+                        } else if (index < this.currentIndex) {
+                            slide.classList.add("prev");
+                            slide.classList.remove("active");
+                        } else {
+                            slide.classList.remove("active", "prev");
+                        }
+                    });
+
+                    this.dots.forEach((dot, index) => {
+                        dot.classList.toggle("bg-white/50", index === this.currentIndex);
+                        dot.classList.toggle("bg-white/30", index !== this.currentIndex);
+                    });
+                },
+
+                nextSlide() {
+                    this.currentIndex = (this.currentIndex + 1) % this.slides.length;
+                    this.updateSlidePositions();
+                },
+
+                prevSlide() {
+                    this.currentIndex =
+                        (this.currentIndex - 1 + this.slides.length) % this.slides.length;
+                    this.updateSlidePositions();
+                },
+
+                goToSlide(index) {
+                    this.currentIndex = index;
+                    this.updateSlidePositions();
+                },
+            };
+
+            slider.init();
+        });
+    </script>
+    <!-- END SCRIPT SLIDER -->
+
+    <!-- START SCRIPT  CLIENTES -->
+    <script>
+        var glide09 = new Glide('.glide-clientes', {
+            type: 'carousel',
+            autoplay: 1,
+            animationDuration: 4500,
+            animationTimingFunc: 'linear',
+            perView: 3,
+            classes: {
+                activeNav: '[&>*]:bg-slate-700',
+            },
+            breakpoints: {
+                1024: {
+                    perView: 3
+                },
+                640: {
+                    perView: 1,
+                    gap: 20
+                }
+            },
+        });
+
+        glide09.mount();
+    </script>
+    <!-- END SCRIPT  CLIENTES -->
+</body>
+
+</html>

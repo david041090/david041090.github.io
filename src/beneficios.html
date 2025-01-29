@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kaizen - Instalación de Gas Natural</title>
+  <link rel="stylesheet" href="output.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js"></script>
+
+  <style>
+    .faq-content {
+      overflow: hidden;
+      transition: max-height 0.3s ease;
+    }
+  </style>
+</head>
+
+<body class="bg-gray-50">
+  <!-- Hero Section -->
+  <div class="relative">
+    <section id="inicio" class="relative w-full">
+      <div class="w-full flex items-center justify-center text-white text-center" style="
+            background-image: linear-gradient(
+                rgba(0, 46, 102, 0.95),
+                rgba(0, 46, 102, 0.7)
+              ),
+              url('image/slider/gas_natural.jpg');
+            background-size: cover;
+            height: 300px;
+            margin-top: 90px;
+            background-position: center;
+          ">
+        <div class="max-w-2xl px-4 mt-20">
+          <!-- o mt-24, mt-28, mt-32 para más espacio -->
+          <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">
+            El Gas Natural y Sus Beneficios.
+          </h1>
+          <p class="text-lg md:text-xl lg:text-2xl mb-8">Conoce las ventajas de usar gas natural en tu hogar</p>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- ================ NAVEGADORES  =============   -->
+  <div class="fixed top-0 left-0 right-0 z-50">
+    <!-- Top secondary navigation -->
+    <div class="bg-primary-800 w-full">
+      <div class="max-w-screen-xl mx-auto py-2 px-4">
+        <div class="flex justify-end items-center space-x-6 text-sm text-white">
+          <!-- Contact Information -->
+          <div class="flex items-center space-x-4">
+            <a href="tel:01-6828303" class="hover:text-cyan-400 items-center  hidden md:flex">
+              <i class="fa-solid fa-phone w-4 h-4 mr-1"></i>
+              01-6828303
+            </a>
+            <a href="tel:959363858" class="hover:text-cyan-400 items-center  hidden md:flex">
+              <i class="fa-solid fa-phone w-4 h-4 mr-1"></i>
+              959 363 858
+            </a>
+            <a href="mailto:info@kaizen.com" class="hover:text-cyan-400 flex items-center">
+              <i class="fa-solid fa-envelope w-4 h-4 mr-1"></i>
+              info@kaizen.com
+            </a>
+          </div>
+          <!-- Social Media Links -->
+          <div class="flex items-center space-x-4">
+            <a href="https://www.facebook.com/profile.php?id=100078954631590" class="hover:text-cyan-400"
+              target="_blank">
+              <i class="fa-brands fa-facebook w-4 h-4"></i>
+            </a>
+            <a href="https://www.instagram.com/gkaizen.ic?igsh=NzR0bnlza3ZrMGJv" class="hover:text-cyan-400"
+              target="_blank">
+              <i class="fa-brands fa-instagram w-4 h-4"></i>
+            </a>
+            <a href="#" class="hover:text-cyan-400">
+              <i class="fa-brands fa-youtube w-4 h-4"></i>
+            </a>
+            <a href="#" class="hover:text-cyan-400">
+              <i class="fa-brands fa-linkedin w-4 h-4"></i>
+            </a>
+            <a href="#" class="hover:text-cyan-400">
+              <i class="fa-brands fa-tiktok w-4 h-4"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main navigation - now with sticky behavior -->
+    <nav id="main-nav" class="bg-gradient-to-b from-primary-700 to-primary-500 w-full transition-all duration-300">
+      <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-2">
+        <a href="#" class="flex items-center space-x-3">
+          <img src="image/logodark.png" alt="Logo Kaizen" class="self-center h-8" />
+          <!-- Ajusta la ruta y el tamaño (h-8) según necesites -->
+        </a>
+        <!-- Mobile menu button -->
+        <button id="menu-toggle" class="md:hidden p-2 text-gray-50 hover:bg-gray-100 rounded-lg">
+          <i class="fa-solid fa-bars w-6 h-6"></i>
+        </button>
+        <!-- Navigation menu -->
+        <div id="mobile-menu" class="hidden md:block w-full md:w-auto">
+          <ul class="flex flex-col md:flex-row md:space-x-8 mt-4 md:mt-0">
+            <li>
+              <a href="index.html" class="block py-2 pl-3 pr-4 text-complemento-500">Inicio</a>
+            </li>
+            <li>
+              <a href="index.html#nosotros"
+                class="block py-2 pl-3 pr-4 text-gray-50 hover:text-complemento-500">Nosotros</a>
+            </li>
+            <li>
+              <a href="index.html#servicios"
+                class="block py-2 pl-3 pr-4 text-gray-50 hover:text-complemento-500">Instalación</a>
+            </li>
+            <li>
+              <a href="index.html#certificaciones"
+                class="block py-2 pl-3 pr-4 text-gray-50 hover:text-complemento-500">Certificaciones</a>
+            </li>
+            <li>
+              <a href="index.html#clientes"
+                class="block py-2 pl-3 pr-4 text-gray-50 hover:text-complemento-500">Clientes</a>
+            </li>
+            <li>
+              <a href="galeria.html" class="block py-2 pl-3 pr-4 text-gray-50 hover:text-complemento-500">Galeria</a>
+            </li>
+            <li>
+              <a href="contacto.html" class="block py-2 pl-3 pr-4 text-gray-50 hover:text-complemento-500">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+  <!-- ================Botón de WhatsApp con Tooltip================ -->
+  <div class="fixed bottom-6 right-6 z-50 flex items-center group">
+    <!-- Tooltip/Mensaje -->
+    <div id="whatsapp-tooltip"
+      class="hidden bg-green-500 text-white px-4 py-2 rounded-lg shadow-lg whitespace-nowrap absolute right-[calc(100%+12px)] transition-opacity duration-300">
+      Chatea con nosotros
+      <!-- Flecha del tooltip -->
+      <div class="absolute top-1/2 right-[-6px] transform -translate-y-1/2 w-3 h-3 bg-green-500 rotate-45">
+      </div>
+    </div>
+
+    <!-- Botón de WhatsApp -->
+    <a href="https://api.whatsapp.com/send?phone=51999393895&text=¡Hola!%20Me%20gustaría%20obtener%20más%20información."
+      target="_blank" id="whatsapp-button"
+      class="bg-green-500 hover:bg-green-600 text-white rounded-full p-2 shadow-lg transition-all duration-300 hover:scale-110 z-[9999] cursor-pointer">
+      <i class="fab fa-whatsapp w-10 h-10 text-2xl"></i>
+    </a>
+  </div>
+
+  <main class="relative z-40">
+
+    <!--SECCITON beneficios-->
+    <section>
+      <!-- Benefits Section -->
+      <div id="beneficios" class="max-w-7xl mx-auto px-2 py-10">
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <!-- Económico -->
+          <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+            <div class="p-8">
+              <div class="flex items-center mb-6">
+                <div class="w-16 h-16 bg-primary-700 rounded-full flex items-center justify-center">
+                  <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                </div>
+                <h3 class="text-2xl font-bold ml-4 text-gray-900">ECONÓMICO</h3>
+              </div>
+              <p class="text-gray-600 leading-relaxed">
+                Ahorro en el gasto mensual es hasta un 70% comparado al uso de electricidad y hasta un 40% con el GLP de
+                balón.
+              </p>
+              <div class="mt-4 bg-blue-50 rounded-lg p-4">
+                <p class="text-sm text-blue-700">Ahorro promedio mensual significativo para tu economía familiar</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Seguro -->
+          <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+            <div class="p-8">
+              <div class="flex items-center mb-6">
+                <div class="w-16 h-16 bg-primary-700 rounded-full flex items-center justify-center">
+                  <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                  </svg>
+                </div>
+                <h3 class="text-2xl font-bold ml-4 text-gray-900">SEGURO</h3>
+              </div>
+              <p class="text-gray-600 leading-relaxed">
+                Más liviano que el aire, se disipa rápidamente cualquier fuga. Monitoreo las 24 horas del día. No es
+                tóxico. Es inoloro (se le agrega un olor para detectar).
+              </p>
+              <div class="mt-4 bg-blue-50 rounded-lg p-4">
+                <p class="text-sm text-blue-700">Sistema de seguridad integral con revisión quinquenal obligatoria</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Servicio Continuo -->
+          <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+            <div class="p-8">
+              <div class="flex items-center mb-6">
+                <div class="w-16 h-16  bg-primary-700 rounded-full flex items-center justify-center">
+                  <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M13 10V3L4 14h7v7l9-11h-7z" />
+                  </svg>
+                </div>
+                <h3 class="text-2xl font-bold ml-4 text-gray-900">SERVICIO CONTINUO</h3>
+              </div>
+              <p class="text-gray-600 leading-relaxed">
+                Cocina o báñate con agua caliente sin interrupciones ya que el Gas Natural nunca se acaba. Es
+                distribuido continuamente por tuberías subterráneas.
+              </p>
+              <div class="mt-4 bg-blue-50 rounded-lg p-4">
+                <p class="text-sm text-blue-700">Suministro ininterrumpido las 24 horas del día</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Ecológico y Limpio -->
+          <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+            <div class="p-8">
+              <div class="flex items-center mb-6">
+                <div class="w-16 h-16 bg-primary-700 rounded-full flex items-center justify-center">
+                  <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                </div>
+                <h3 class="text-2xl font-bold ml-4 text-gray-900">ECOLÓGICO Y LIMPIO</h3>
+              </div>
+              <p class="text-gray-600 leading-relaxed">
+                Contribuye al medio ambiente y a tu salud. Emite menor cantidad de CO2 al medioambiente.
+              </p>
+              <div class="mt-4 bg-blue-50 rounded-lg p-4">
+                <p class="text-sm text-blue-700">Reduce tu huella de carbono mientras cuidas tu salud</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- CTA Section -->
+      <div class="bg-blue-600">
+        <div class="max-w-7xl mx-auto px-4 py-12 sm:px-6 lg:py-16 lg:px-8">
+          <div class="text-center">
+            <h2 class="text-3xl font-extrabold text-white sm:text-4xl">
+              ¿Listo para comenzar?
+            </h2>
+            <p class="mt-4 text-xl text-blue-100">
+              Descubre cómo el gas natural puede beneficiar tu hogar hoy mismo
+            </p>
+            <div class="mt-8">
+              <a href="contacto.html"
+                class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-blue-600 bg-white hover:bg-blue-50">
+                Contáctanos
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-primary-800 text-white py-8 px-6 text-sm">
+    <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
+
+        <!-- Columna 1: Mapa de ubicación -->
+        <div>
+            <h3 class="font-bold">UBICACIÓN</h3>
+            <div class="mt-4">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d867.7805430897275!2d-76.98246779320944!3d-12.078488156171447!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTLCsDA0JzQyLjgiUyA3NsKwNTgnNTUuNSJX!5e1!3m2!1ses-419!2spe!4v1737578493213!5m2!1ses-419!2spe"
+                    width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+
+        <!-- Columna 2: Información de la empresa, Teléfonos y Redes Sociales -->
+        <div class="max-w-2xl mx-auto p-8">
+            <!-- Encabezado -->
+            <div class="text-center mb-8">
+                <h3 class="text-3xl font-bold mb-2">GRUPO KAIZEN</h3>
+            </div>
+
+            <!-- Grid de información de contacto -->
+            <div class="grid md:grid-cols-2 gap-6 mb-8">
+                <!-- Columna izquierda -->
+                <div class="space-y-4">
+                    <div class="p-4 rounded-lg">
+                        <p class="flex items-center">
+                            <i class="fas fa-map-marker-alt w-6 h-6 mr-3"></i>
+                            <span class="text-sm">Jr. Bartolomé Ruiz 293, Urb. Salamanca de Monterrico,
+                                Ate</span>
+                        </p>
+                    </div>
+                    <div class="p-4 rounded-lg">
+                        <p class="flex items-center">
+                            <i class="fas fa-envelope w-6 h-6 mr-3"></i>
+                            <a href="mailto:info@kaizen.com" class="text-sm hover:underline">info@kaizen.com</a>
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Columna derecha -->
+                <div class="space-y-4">
+                    <div class="p-4 rounded-lg">
+                        <p class="flex items-center">
+                            <i class="fas fa-phone w-6 h-6 mr-3"></i>
+                            <span>
+                                <span class="text-sm text-gray-50">Central Telefónica</span>
+                                <span class="block text-sm">01-6828303</span>
+                            </span>
+                        </p>
+                    </div>
+                    <div class="p-4 rounded-lg">
+                        <p class="flex items-center">
+                            <i class="fab fa-whatsapp w-6 h-6 mr-3"></i>
+                            <span>
+                                <span class="text-sm text-gray-50">WhatsApp/Celular</span>
+                                <span class="block text-sm">959363858</span>
+                            </span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Redes sociales -->
+            <div class="text-center">
+                <h3 class="text-2xl font-bold mb-6">SÍGUENOS</h3>
+                <div class="flex justify-center items-center gap-6">
+                    <a href="#" class="hover:opacity-75">
+                        <i class="fab fa-linkedin text-2xl"></i>
+                        <span class="sr-only">LinkedIn</span>
+                    </a>
+                    <a href="#" class="hover:opacity-75">
+                        <i class="fab fa-facebook text-2xl"></i>
+                        <span class="sr-only">Facebook</span>
+                    </a>
+                    <a href="#" class="hover:opacity-75">
+                        <i class="fab fa-instagram text-2xl"></i>
+                        <span class="sr-only">Instagram</span>
+                    </a>
+                    <a href="#" class="hover:opacity-75">
+                        <i class="fab fa-youtube text-2xl"></i>
+                        <span class="sr-only">YouTube</span>
+                    </a>
+                    <a href="#" class="hover:opacity-75">
+                        <i class="fab fa-tiktok text-2xl"></i>
+                        <span class="sr-only">TikTok</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Línea divisoria -->
+    <div class="border-t border-gray-400 mt-8 pt-4 text-center text-xs">
+        ©2025 KAIZEN - Todos los derechos reservados.
+    </div>
+</footer>
+  <!-- Scripts-->
+
+  <script>
+    // Control del tooltip
+    const tooltip = document.getElementById('whatsapp-tooltip');
+    const showTooltip = () => tooltip.classList.replace('hidden', 'block');
+    const hideTooltip = () => tooltip.classList.replace('block', 'hidden');
+
+    // Función para mostrar el tooltip por 5 segundos
+    const displayTooltip = () => {
+        showTooltip();
+        setTimeout(hideTooltip, 5000); // Ocultar después de 5 segundos
+    };
+
+    // Mostrar tooltip al cargar la página
+    document.addEventListener('DOMContentLoaded', () => {
+        setTimeout(displayTooltip, 1000); // Mostrar después de 1 segundo de carga
+    });
+    // Mostrar tooltip cada 5 minutos
+    setInterval(displayTooltip, 300000); // 300000 ms = 5 minutos
+
+    // Mantener el comportamiento del hover
+    const whatsappContainer = tooltip.parentElement;
+    whatsappContainer.addEventListener('mouseenter', showTooltip);
+    whatsappContainer.addEventListener('mouseleave', hideTooltip);
+</script>
+
+  <!-- START SCRIPT NAV -->
+  <script>
+    // Get the navbar
+    const mainNav = document.getElementById("main-nav");
+    const topNav = mainNav.previousElementSibling;
+    const mobileMenu = document.getElementById("mobile-menu");
+    const menuToggle = document.getElementById("menu-toggle");
+    let lastScrollY = window.scrollY;
+
+    // Get the height of the top navigation
+    const topNavHeight = topNav.offsetHeight;
+
+    // Function to collapse mobile menu
+    const collapseMobileMenu = () => {
+        mobileMenu.classList.add("hidden");
+    };
+
+    // Add scroll event listener
+    window.addEventListener("scroll", function () {
+        const currentScrollY = window.scrollY;
+
+        if (currentScrollY > topNavHeight) {
+            // Scrolling down past the top nav
+            mainNav.classList.add("fixed", "top-0", "shadow-md", "z-50");
+            document.body.style.paddingTop = mainNav.offsetHeight + "px";
+        } else {
+            // Scrolling back up
+            mainNav.classList.remove("fixed", "top-0", "shadow-md", "z-50");
+            document.body.style.paddingTop = "0";
+        }
+
+        lastScrollY = currentScrollY;
+    });
+
+    // Mobile menu toggle
+    menuToggle.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+    });
+
+    // Add click event listeners to all menu items
+    const menuItems = mobileMenu.querySelectorAll('a');
+    menuItems.forEach(item => {
+        item.addEventListener('click', () => {
+            collapseMobileMenu();
+        });
+    });
+
+    // Optional: Close menu when clicking outside
+    document.addEventListener('click', (event) => {
+        const isClickInsideMenu = mobileMenu.contains(event.target);
+        const isClickOnToggle = menuToggle.contains(event.target);
+
+        if (!isClickInsideMenu && !isClickOnToggle && !mobileMenu.classList.contains('hidden')) {
+            collapseMobileMenu();
+        }
+    });
+</script>
+  <!-- END SCRIPT NAV -->
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const toggles = document.querySelectorAll(".faq-toggle");
+
+      toggles.forEach((toggle) => {
+        toggle.addEventListener("click", () => {
+          const content = toggle.nextElementSibling;
+
+          // Cerrar todos los acordeones abiertos
+          document.querySelectorAll(".faq-content").forEach((item) => {
+            item.style.maxHeight = null;
+            item.classList.add("hidden");
+          });
+
+          // Restablecer todos los íconos a "+"
+          document.querySelectorAll(".faq-toggle .icon").forEach((icon) => {
+            icon.textContent = "+";
+          });
+
+          // Abrir o cerrar el acordeón seleccionado
+          if (content.classList.contains("hidden")) {
+            content.classList.remove("hidden");
+            content.style.maxHeight = content.scrollHeight + "px"; // Calcular altura automática
+            toggle.querySelector(".icon").textContent = "-";
+          } else {
+            content.classList.add("hidden");
+            content.style.maxHeight = null;
+            toggle.querySelector(".icon").textContent = "+";
+          }
+        });
+      });
+    });
+  </script>
+</body>
+
+</html>

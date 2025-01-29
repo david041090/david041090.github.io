@@ -1,0 +1,1474 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kaizen - Instalación de Gas Natural</title>
+  <link rel="stylesheet" href="output.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js"></script>
+</head>
+
+<body class="bg-gray-50">
+  <!-- Hero Section -->
+  <div class="relative">
+    <section id="inicio" class="relative w-full">
+      <div class="w-full flex items-center justify-center text-white text-center" style="
+            background-image: linear-gradient(
+                rgba(0, 46, 102, 0.95),
+                rgba(0, 46, 102, 0.7)
+              ),
+              url('image/slider/gas_natural.jpg');
+            background-size: cover;
+            height: 300px;
+            margin-top: 90px;
+            background-position: center;
+          ">
+        <div class="max-w-2xl px-4 mt-20">
+          <!-- o mt-24, mt-28, mt-32 para más espacio -->
+          <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">
+            INSTALACIONES
+          </h1>
+          <p class="text-lg md:text-xl lg:text-2xl mb-8">Con los mejores estandares.</p>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- ================ NAVEGADORES  =============   -->
+  <div class="fixed top-0 left-0 right-0 z-50">
+    <!-- Top secondary navigation -->
+    <div class="bg-primary-800 w-full">
+      <div class="max-w-screen-xl mx-auto py-2 px-4">
+        <div class="flex justify-end items-center space-x-6 text-sm text-white">
+          <!-- Contact Information -->
+          <div class="flex items-center space-x-4">
+            <a href="tel:01-6828303" class="hover:text-cyan-400 items-center  hidden md:flex">
+              <i class="fa-solid fa-phone w-4 h-4 mr-1"></i>
+              01-6828303
+            </a>
+            <a href="tel:959363858" class="hover:text-cyan-400 items-center  hidden md:flex">
+              <i class="fa-solid fa-phone w-4 h-4 mr-1"></i>
+              959 363 858
+            </a>
+            <a href="mailto:info@kaizen.com" class="hover:text-cyan-400 flex items-center">
+              <i class="fa-solid fa-envelope w-4 h-4 mr-1"></i>
+              info@kaizen.com
+            </a>
+          </div>
+          <!-- Social Media Links -->
+          <div class="flex items-center space-x-4">
+            <a href="https://www.facebook.com/profile.php?id=100078954631590" class="hover:text-cyan-400"
+              target="_blank">
+              <i class="fa-brands fa-facebook w-4 h-4"></i>
+            </a>
+            <a href="https://www.instagram.com/gkaizen.ic?igsh=NzR0bnlza3ZrMGJv" class="hover:text-cyan-400"
+              target="_blank">
+              <i class="fa-brands fa-instagram w-4 h-4"></i>
+            </a>
+            <a href="#" class="hover:text-cyan-400">
+              <i class="fa-brands fa-youtube w-4 h-4"></i>
+            </a>
+            <a href="#" class="hover:text-cyan-400">
+              <i class="fa-brands fa-linkedin w-4 h-4"></i>
+            </a>
+            <a href="#" class="hover:text-cyan-400">
+              <i class="fa-brands fa-tiktok w-4 h-4"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main navigation - now with sticky behavior -->
+    <nav id="main-nav" class="bg-gradient-to-b from-primary-700 to-primary-500 w-full transition-all duration-300">
+      <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-2">
+        <a href="#" class="flex items-center space-x-3">
+          <img src="image/logodark.png" alt="Logo Kaizen" class="self-center h-8" />
+          <!-- Ajusta la ruta y el tamaño (h-8) según necesites -->
+        </a>
+        <!-- Mobile menu button -->
+        <button id="menu-toggle" class="md:hidden p-2 text-gray-50 hover:bg-gray-100 rounded-lg">
+          <i class="fa-solid fa-bars w-6 h-6"></i>
+        </button>
+        <!-- Navigation menu -->
+        <div id="mobile-menu" class="hidden md:block w-full md:w-auto">
+          <ul class="flex flex-col md:flex-row md:space-x-8 mt-4 md:mt-0">
+            <li>
+              <a href="index.html" class="block py-2 pl-3 pr-4 text-complemento-500">Inicio</a>
+            </li>
+            <li>
+              <a href="index.html#nosotros"
+                class="block py-2 pl-3 pr-4 text-gray-50 hover:text-complemento-500">Nosotros</a>
+            </li>
+            <li>
+              <a href="index.html#servicios"
+                class="block py-2 pl-3 pr-4 text-gray-50 hover:text-complemento-500">Instalación</a>
+            </li>
+            <li>
+              <a href="index.html#certificaciones"
+                class="block py-2 pl-3 pr-4 text-gray-50 hover:text-complemento-500">Certificaciones</a>
+            </li>
+            <li>
+              <a href="index.html#clientes"
+                class="block py-2 pl-3 pr-4 text-gray-50 hover:text-complemento-500">Clientes</a>
+            </li>
+            <li>
+              <a href="galeria.html" class="block py-2 pl-3 pr-4 text-gray-50 hover:text-complemento-500">Galeria</a>
+            </li>
+            <li>
+              <a href="contacto.html" class="block py-2 pl-3 pr-4 text-gray-50 hover:text-complemento-500">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+  </div>
+
+  <!-- ================Botón de WhatsApp con Tooltip================ -->
+  <div class="fixed bottom-6 right-6 z-50 flex items-center group">
+    <!-- Tooltip/Mensaje -->
+    <div id="whatsapp-tooltip"
+      class="hidden bg-green-500 text-white px-4 py-2  shadow-lg whitespace-nowrap absolute right-[calc(100%+12px)] transition-opacity duration-300">
+      Chatea con nosotros
+      <!-- Flecha del tooltip -->
+      <div class="absolute top-1/2 right-[-6px] transform -translate-y-1/2 w-3 h-3 bg-green-500 rotate-45">
+      </div>
+    </div>
+
+    <!-- Botón de WhatsApp -->
+    <a href="https://api.whatsapp.com/send?phone=51999393895&text=¡Hola!%20Me%20gustaría%20obtener%20más%20información."
+      target="_blank" id="whatsapp-button"
+      class="bg-green-500 hover:bg-green-600 text-white rounded-full p-2 shadow-lg transition-all duration-300 hover:scale-110 z-[9999] cursor-pointer">
+      <i class="fab fa-whatsapp w-10 h-10 text-2xl"></i>
+    </a>
+  </div>
+  <main class="relative z-40">
+
+    <!-- Contenedor de las pestañas -->
+    <div class="flex justify-center spx-4">
+      <div class="flex justify-center rounded-lg bg-gray-100 p-2 w-full max-w-4xl">
+        <!-- Lista centrada -->
+        <ul
+          class="flex flex-wrap md:flex-nowrap justify-center w-full text-base md:text-lg font-semibold text-center gap-2"
+          id="tabMenu" role="tablist">
+          <li role="presentation" class="w-[calc(50%-0.25rem)] md:w-auto">
+            <button
+              class="w-full px-4 md:px-8 py-4 rounded-lg flex items-center justify-center space-x-2 bg-white shadow-lg text-primary-600 transition-all duration-300 hover:bg-primary-50 hover:scale-105"
+              id="residencial-tab" data-target="residencial" role="tab" aria-selected="true">
+              <i class="fas fa-home mr-2 text-lg"></i>
+              <span>Residencial</span>
+            </button>
+          </li>
+          <li role="presentation" class="w-[calc(50%-0.25rem)] md:w-auto">
+            <button
+              class="w-full px-4 md:px-8 py-4 rounded-lg flex items-center justify-center space-x-2 text-gray-600 hover:bg-white hover:shadow-lg hover:scale-105 transition-all duration-300"
+              id="comercial-tab" data-target="comercial" role="tab" aria-selected="false">
+              <i class="fas fa-store mr-2 text-lg"></i>
+              <span>Comercial</span>
+            </button>
+          </li>
+          <li role="presentation" class="w-[calc(50%-0.25rem)] md:w-auto">
+            <button
+              class="w-full px-4 md:px-8 py-4 rounded-lg flex items-center justify-center space-x-2 text-gray-600 hover:bg-white hover:shadow-lg hover:scale-105 transition-all duration-300"
+              id="multifamiliar-tab" data-target="multifamiliar" role="tab" aria-selected="false">
+              <i class="fas fa-building mr-2 text-lg"></i>
+              <span>Multifamiliar</span>
+            </button>
+          </li>
+          <li role="presentation" class="w-[calc(50%-0.25rem)] md:w-auto">
+            <button
+              class="w-full px-4 md:px-8 py-4 rounded-lg flex items-center justify-center space-x-2 text-gray-600 hover:bg-white hover:shadow-lg hover:scale-105 transition-all duration-300"
+              id="industrial-tab" data-target="industrial" role="tab" aria-selected="false">
+              <i class="fas fa-industry mr-2 text-lg"></i>
+              <span>Industrial</span>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Contenido de las pestañas con animación -->
+    <div class="tab-content max-w-7xl mx-auto bg-white rounded-lg shadow-lg">
+
+      <!-- CONTENIDO RESIDENCIAL -->
+      <div id="residencial" class="tab-pane transition-opacity duration-300">
+        <!--SECCITON instalciones-->
+        <div class="bg-primary-600 first-letter:container mx-auto px-6 py-10">
+          <!-- Hero Section -->
+          <header class=" text-white ">
+            <div class="container mx-auto ">
+              <!-- Grid de dos columnas -->
+              <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+                <!-- Columna de texto -->
+                <div class="space-y-6 py-2">
+                  <div>
+                    <h1 class="text-4xl font-bold mb-4">Instalación Residencial de Gas</h1>
+                    <p class="text-xl">La solución segura y económica para tu hogar</p>
+                  </div>
+
+                  <div class="bg-white backdrop-blur rounded-lg shadow-lg p-6">
+                    <h2 class="text-primary-700 text-2xl font-bold mb-4">¿Qué es la instalación de gas doméstico?
+                    </h2>
+                    <p class="text-primary-700">
+                      La instalación de gas doméstico consiste en el diseño, montaje y puesta en funcionamiento de
+                      un
+                      sistema que
+                      permite llevar gas natural o GLP desde una fuente de suministro hasta los puntos de consumo
+                      dentro de
+                      una
+                      vivienda (Cocinas, termas, etc).
+                    </p>
+                    <p class="text-primary-700 mt-4">
+                      Kaizen en convenio con el programa Bonogas del Ministerio de Energía y Minas, busca facilitar
+                      el
+                      acceso al
+                      gas natural a través del subsidio con los costos de instalación del servicio de gas natural
+                      como
+                      una
+                      opción
+                      más económica, segura y sostenible.
+                    </p>
+                  </div>
+                </div>
+
+                <!-- Columna de imagen -->
+                <div class="lg:block">
+                  <div class="relative h-full rounded-lg overflow-hidden shadow-xl">
+                    <img src="https://cdn.pixabay.com/photo/2020/09/18/02/10/stove-5580691_1280.jpg"
+                      alt="Instalación de gas residencial" class="w-full h-full object-cover rounded-lg" />
+                  </div>
+                  <!-- Botón -->
+                  <div class="mt-4 text-center">
+                    <a href="contacto.html" class="inline-block mt-4">
+                      <button
+                        class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-full transform transition-transform hover:scale-105 shadow-lg text-lg">
+                        <i class="fas fa-file-signature mr-2"></i> <!-- Icono para consulta -->
+                        Consultar por instalación
+                      </button>
+                    </a>
+                    <a href="https://api.whatsapp.com/send?phone=51999393895&text=¡Hola!%20Me%20gustaría%20obtener%20más%20información."
+                      target="_blank" class="inline-block mt-4">
+                      <button
+                        class="bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-8 rounded-full transform transition-transform hover:scale-105 shadow-lg text-lg">
+                        <i class="fab fa-whatsapp mr-2"></i> <!-- Icono de WhatsApp -->
+                        Escribir Mensaje
+                      </button>
+                    </a>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </header>
+
+        </div>
+
+        <!-- Descripción General -->
+        <section class="container mx-auto px-4 py-8">
+          <!-- Pasos de Instalación -->
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- Paso 1 -->
+            <div
+              class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-200">
+              <div class="bg-blue-600 text-white rounded-lg shadow-lg overflow-hidden">
+                <div class="flex items-center p-4">
+                  <div class="w-1/4 flex justify-center px-2">
+                    <i class="fas fa-bullhorn text-4xl"></i>
+                  </div>
+                  <div class="w-3/4 pl-4">
+                    <h3 class="text-xl font-bold">PASO 1</h3>
+                    <p class="font-medium">DIFUSIÓN DEL PROGRAMA Y/O SERVICIOS</p>
+                  </div>
+                </div>
+              </div>
+              <div class="p-4">
+                <p class="text-gray-600">Información completa sobre nuestros servicios y beneficios del programa.
+                </p>
+              </div>
+            </div>
+
+            <!-- Paso 2 -->
+            <div
+              class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-200">
+              <div class="bg-blue-600 text-white rounded-lg shadow-lg overflow-hidden">
+                <div class="flex items-center p-4">
+                  <div class="w-1/4 flex justify-center px-2">
+                    <i class="fas fa-file-contract text-4xl"></i>
+                  </div>
+                  <div class="w-3/4 pl-4">
+                    <h3 class="text-xl font-bold">PASO 2</h3>
+                    <p class="font-medium">SUSCRIPCIÓN DE CONTRATO</p>
+                  </div>
+                </div>
+              </div>
+              <div class="p-4">
+                <p class="text-gray-600">Formalización del servicio con términos y condiciones claras.</p>
+              </div>
+            </div>
+
+            <!-- Paso 3 -->
+            <div
+              class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-200">
+              <div class="bg-blue-600 text-white rounded-lg shadow-lg overflow-hidden">
+                <div class="flex items-center p-4">
+                  <div class="w-1/4 flex justify-center px-2">
+                    <i class="fas fa-tools text-4xl"></i>
+                  </div>
+                  <div class="w-3/4 pl-4">
+                    <h3 class="text-xl font-bold">PASO 3</h3>
+                    <p class="font-medium">CONSTRUCCIÓN DE LA INSTALACIÓN INTERNA</p>
+                  </div>
+                </div>
+              </div>
+              <div class="p-4">
+                <p class="text-gray-600">Instalación profesional de tuberías y conexiones internas.</p>
+              </div>
+            </div>
+
+            <!-- Paso 4 -->
+            <div
+              class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-200">
+              <div class="bg-blue-600 text-white rounded-lg shadow-lg overflow-hidden">
+                <div class="flex items-center p-4">
+                  <div class="w-1/4 flex justify-center px-2">
+                    <i class="fas fa-network-wired text-4xl"></i>
+                  </div>
+                  <div class="w-3/4 pl-4">
+                    <h3 class="text-xl font-bold">PASO 4</h3>
+                    <p class="font-medium">CONSTRUCCIÓN DE LA INSTALACIÓN EXTERNA</p>
+                  </div>
+                </div>
+              </div>
+              <div class="p-4">
+                <p class="text-gray-600">Conexión segura a la red de distribución externa.</p>
+              </div>
+            </div>
+
+            <!-- Paso 5 -->
+            <div
+              class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-200">
+              <div class="bg-blue-600 text-white rounded-lg shadow-lg overflow-hidden">
+                <div class="flex items-center p-4">
+                  <div class="w-1/4 flex justify-center px-2">
+                    <i class="fas fa-check-circle text-4xl"></i>
+                  </div>
+                  <div class="w-3/4 pl-4">
+                    <h3 class="text-xl font-bold">PASO 5</h3>
+                    <p class="font-medium">HABILITACIÓN DEL SERVICIO</p>
+                  </div>
+                </div>
+              </div>
+              <div class="p-4">
+                <p class="text-gray-600">Pruebas de seguridad y activación del servicio.</p>
+              </div>
+            </div>
+
+            <!-- Paso 6 -->
+            <div
+              class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-200">
+              <div class="bg-blue-600 text-white rounded-lg shadow-lg overflow-hidden">
+                <div class="flex items-center p-4">
+                  <div class="w-1/4 flex justify-center px-2">
+                    <i class="fas fa-headset text-4xl"></i>
+                  </div>
+                  <div class="w-3/4 pl-4">
+                    <h3 class="text-xl font-bold">PASO 6</h3>
+                    <p class="font-medium">ATENCIÓN AL USUARIO</p>
+                  </div>
+                </div>
+              </div>
+              <div class="p-4">
+                <p class="text-gray-600">Soporte continuo y servicio post-instalación.</p>
+              </div>
+            </div>
+          </div>
+          <!-- Sección de Video Testimonial -->
+          <div class="mt-8 bg-white rounded-lg shadow-lg p-6">
+            <h2 class="text-2xl font-bold mb-4">Testimonios de Nuestros Clientes</h2>
+            <div class="aspect-w-16 aspect-h-9">
+              <img src="/api/placeholder/800/450" alt="Video testimonial placeholder"
+                class="rounded-lg w-full h-64 object-cover" />
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <!-- CONTENIDO COMERCIAL -->
+      <div id="comercial" class="tab-pane transition-opacity duration-300">
+        <!--SECTION instalaciones-->
+        <div class="bg-primary-600  mx-auto px-6 py-10 ">
+          <!-- Hero Section -->
+          <header class="text-white">
+            <div class="container mx-auto px-4">
+              <!-- Grid de dos columnas -->
+              <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+                <!-- Columna de texto -->
+                <div class="space-y-7 py-2">
+                  <div>
+                    <h1 class="text-4xl font-bold mb-4">Instalación Comercial de Gas</h1>
+                    <p class="text-xl">Soluciones profesionales para su negocio</p>
+                  </div>
+
+                  <div class="bg-white backdrop-blur rounded-lg shadow-lg p-6">
+                    <h2 class="text-primary-700 text-2xl font-bold mb-4">¿Qué es la instalación de gas comercial?
+                    </h2>
+
+                    <!-- Descripción principal -->
+                    <p class="text-primary-700 mb-6">
+                      La instalación de gas comercial consiste en implementar un sistema de distribución de gas
+                      natural o GLP
+                      diseñado para establecimientos comerciales, adaptándose a las necesidades específicas de cada
+                      negocio
+                      que requiere un suministro continuo, eficiente y seguro.
+                    </p>
+
+                    <!-- Grid de establecimientos -->
+                    <h3 class="text-primary-700 text-xl font-semibold mb-4">Ideal para establecimientos como:</h3>
+                    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
+                      <!-- Restaurantes -->
+                      <div
+                        class="bg-blue-50 rounded-lg p-4 text-center transform hover:scale-105 transition-transform duration-200">
+                        <div class="flex justify-center mb-2">
+                          <i class="fas fa-utensils text-4xl text-blue-600"></i>
+                        </div>
+                        <h4 class="text-primary-700 font-medium">Restaurantes</h4>
+                      </div>
+
+                      <!-- Panaderías -->
+                      <div
+                        class="bg-blue-50 rounded-lg p-4 text-center transform hover:scale-105 transition-transform duration-200">
+                        <div class="flex justify-center mb-2">
+                          <i class="fas fa-bread-slice text-4xl text-blue-600"></i>
+                        </div>
+                        <h4 class="text-primary-700 font-medium">Panaderías</h4>
+                      </div>
+
+                      <!-- Hoteles -->
+                      <div
+                        class="bg-blue-50 rounded-lg p-4 text-center transform hover:scale-105 transition-transform duration-200">
+                        <div class="flex justify-center mb-2">
+                          <i class="fas fa-hotel text-4xl text-blue-600"></i>
+                        </div>
+                        <h4 class="text-primary-700 font-medium">Hoteles</h4>
+                      </div>
+
+                      <!-- Lavanderías -->
+                      <div
+                        class="bg-blue-50 rounded-lg p-4 text-center transform hover:scale-105 transition-transform duration-200">
+                        <div class="flex justify-center mb-2">
+                          <i class="fas fa-tshirt text-4xl text-blue-600"></i>
+                        </div>
+                        <h4 class="text-primary-700 font-medium">Lavanderías</h4>
+                      </div>
+
+                      <!-- Centros Comerciales -->
+                      <div
+                        class="bg-blue-50 rounded-lg p-4 text-center transform hover:scale-105 transition-transform duration-200">
+                        <div class="flex justify-center mb-2">
+                          <i class="fas fa-shopping-mall text-4xl text-blue-600"></i>
+                        </div>
+                        <h4 class="text-primary-700 font-medium">Otros</h4>
+                      </div>
+                    </div>
+
+                    <!-- Beneficios clave -->
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-6">
+                      <div class="border border-blue-100 rounded-lg p-4">
+                        <div class="flex items-center mb-2">
+                          <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                          <span class="text-primary-700 font-medium">Suministro Continuo</span>
+                        </div>
+                      </div>
+                      <div class="border border-blue-100 rounded-lg p-4">
+                        <div class="flex items-center mb-2">
+                          <i class="fas fa-shield-alt text-green-500 mr-2"></i>
+                          <span class="text-primary-700 font-medium">Alta Eficiencia</span>
+                        </div>
+                      </div>
+                      <div class="border border-blue-100 rounded-lg p-4">
+                        <div class="flex items-center mb-2">
+                          <i class="fas fa-lock text-green-500 mr-2"></i>
+                          <span class="text-primary-700 font-medium">Máxima Seguridad</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Columna de imagen -->
+                <div class="lg:block">
+                  <div class="relative h-full rounded-lg overflow-hidden shadow-xl">
+                    <img src="https://cdn.pixabay.com/photo/2024/02/05/16/07/gas-8554849_1280.jpg"
+                      alt="Instalación de gas comercial" class="w-full h-full object-cover rounded-lg" />
+                  </div>
+                  <!-- Botón -->
+                  <div class="mt-4 text-center">
+                    <a href="contacto.html" class="inline-block mt-4">
+                      <button
+                        class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-full transform transition-transform hover:scale-105 shadow-lg text-lg">
+                        <i class="fas fa-file-signature mr-2"></i> <!-- Icono para consulta -->
+                        Consultar por instalación
+                      </button>
+                    </a>
+                    <a href="https://api.whatsapp.com/send?phone=51999393895&text=¡Hola!%20Me%20gustaría%20obtener%20más%20información."
+                      target="_blank" class="inline-block mt-4">
+                      <button
+                        class="bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-8 rounded-full transform transition-transform hover:scale-105 shadow-lg text-lg">
+                        <i class="fab fa-whatsapp mr-2"></i> <!-- Icono de WhatsApp -->
+                        Escribir Mensaje
+                      </button>
+                    </a>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </header>
+        </div>
+
+        <!-- Descripción General -->
+        <section class="container mx-auto px-4 py-8">
+          <!-- Pasos de Instalación -->
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- Paso 1 -->
+            <div
+              class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-200">
+              <div class="bg-blue-600 text-white rounded-lg shadow-lg overflow-hidden">
+                <div class="flex items-center p-4">
+                  <div class="w-1/4 flex justify-center px-2">
+                    <i class="fas fa-bullhorn text-4xl"></i>
+                  </div>
+                  <div class="w-3/4 pl-4">
+                    <h3 class="text-xl font-bold">PASO 1</h3>
+                    <p class="font-medium">DIFUSIÓN DEL PROGRAMA Y/O SERVICIOS</p>
+                  </div>
+                </div>
+              </div>
+              <div class="p-4">
+                <p class="text-gray-600">Información detallada sobre nuestros servicios de instalación comercial.
+                </p>
+              </div>
+            </div>
+
+            <!-- Paso 2 -->
+            <div
+              class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-200">
+              <div class="bg-blue-600 text-white rounded-lg shadow-lg overflow-hidden">
+                <div class="flex items-center p-4">
+                  <div class="w-1/4 flex justify-center px-2">
+                    <i class="fas fa-file-contract text-4xl"></i>
+                  </div>
+                  <div class="w-3/4 pl-4">
+                    <h3 class="text-xl font-bold">PASO 2</h3>
+                    <p class="font-medium">SUSCRIPCIÓN DE CONTRATO</p>
+                  </div>
+                </div>
+              </div>
+              <div class="p-4">
+                <p class="text-gray-600">Formalización del servicio con términos y condiciones específicos para
+                  negocios.</p>
+              </div>
+            </div>
+
+            <!-- Paso 3 -->
+            <div
+              class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-200">
+              <div class="bg-blue-600 text-white rounded-lg shadow-lg overflow-hidden">
+                <div class="flex items-center p-4">
+                  <div class="w-1/4 flex justify-center px-2">
+                    <i class="fas fa-tools text-4xl"></i>
+                  </div>
+                  <div class="w-3/4 pl-4">
+                    <h3 class="text-xl font-bold">PASO 3</h3>
+                    <p class="font-medium">CONSTRUCCIÓN DE LA INSTALACIÓN INTERNA</p>
+                  </div>
+                </div>
+              </div>
+              <div class="p-4">
+                <p class="text-gray-600">Instalación profesional de tuberías y conexiones internas para uso
+                  comercial.
+                </p>
+              </div>
+            </div>
+
+            <!-- Paso 4 -->
+            <div
+              class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-200">
+              <div class="bg-blue-600 text-white rounded-lg shadow-lg overflow-hidden">
+                <div class="flex items-center p-4">
+                  <div class="w-1/4 flex justify-center px-2">
+                    <i class="fas fa-network-wired text-4xl"></i>
+                  </div>
+                  <div class="w-3/4 pl-4">
+                    <h3 class="text-xl font-bold">PASO 4</h3>
+                    <p class="font-medium">CONSTRUCCIÓN DE LA INSTALACIÓN EXTERNA</p>
+                  </div>
+                </div>
+              </div>
+              <div class="p-4">
+                <p class="text-gray-600">Conexión segura a la red de distribución externa y sistemas de regulación.
+                </p>
+              </div>
+            </div>
+
+            <!-- Paso 5 -->
+            <div
+              class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-200">
+              <div class="bg-blue-600 text-white rounded-lg shadow-lg overflow-hidden">
+                <div class="flex items-center p-4">
+                  <div class="w-1/4 flex justify-center px-2">
+                    <i class="fas fa-check-circle text-4xl"></i>
+                  </div>
+                  <div class="w-3/4 pl-4">
+                    <h3 class="text-xl font-bold">PASO 5</h3>
+                    <p class="font-medium">HABILITACIÓN DEL SERVICIO</p>
+                  </div>
+                </div>
+              </div>
+              <div class="p-4">
+                <p class="text-gray-600">Pruebas de seguridad y activación del servicio comercial.</p>
+              </div>
+            </div>
+
+            <!-- Paso 6 -->
+            <div
+              class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-200">
+              <div class="bg-blue-600 text-white rounded-lg shadow-lg overflow-hidden">
+                <div class="flex items-center p-4">
+                  <div class="w-1/4 flex justify-center px-2">
+                    <i class="fas fa-headset text-4xl"></i>
+                  </div>
+                  <div class="w-3/4 pl-4">
+                    <h3 class="text-xl font-bold">PASO 6</h3>
+                    <p class="font-medium">ATENCIÓN AL USUARIO</p>
+                  </div>
+                </div>
+              </div>
+              <div class="p-4">
+                <p class="text-gray-600">Soporte continuo y servicio post-instalación para su negocio.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Sección de Características Especiales -->
+          <div class="mt-8 grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="bg-white rounded-lg shadow-lg p-6">
+              <h3 class="text-xl font-bold text-primary-700 mb-4">Adaptación a necesidades</h3>
+              <p class="text-gray-600">Diseño personalizado según tipo de negocio, consumo y equipos específicos.
+              </p>
+            </div>
+
+            <div class="bg-white rounded-lg shadow-lg p-6">
+              <h3 class="text-xl font-bold text-primary-700 mb-4">Mayor capacidad</h3>
+              <p class="text-gray-600">Sistemas diseñados para alto consumo con estrictas normas de seguridad.</p>
+            </div>
+
+            <div class="bg-white rounded-lg shadow-lg p-6">
+              <h3 class="text-xl font-bold text-primary-700 mb-4">Versatilidad</h3>
+              <p class="text-gray-600">Compatibilidad con gas natural o GLP según disponibilidad.</p>
+            </div>
+          </div>
+
+          <!-- Sección de Video Testimonial -->
+          <div class="mt-8 bg-white rounded-lg shadow-lg p-6">
+            <h2 class="text-2xl font-bold mb-4">Testimonios de Nuestros Clientes Comerciales</h2>
+            <div class="aspect-w-16 aspect-h-9">
+              <img src="/api/placeholder/800/450" alt="Video testimonial placeholder"
+                class="rounded-lg w-full h-64 object-cover" />
+            </div>
+          </div>
+        </section>
+      </div>
+      <!-- CONTENIDO MULTIFAMILIAR -->
+      <div id="multifamiliar" class="tab-pane hidden transition-opacity duration-300">
+        <div class="bg-primary-600 mx-auto px-6 py-10">
+          <!-- Hero Section -->
+          <header class="text-white">
+            <div class="container mx-auto px-4">
+              <!-- Grid de dos columnas -->
+              <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+                <!-- Columna de texto -->
+                <div class="space-y-7 py-2">
+                  <div>
+                    <h1 class="text-4xl font-bold mb-4">Instalación Multifamiliar de Gas</h1>
+                    <p class="text-xl">Soluciones centralizadas para edificios y condominios</p>
+                  </div>
+
+                  <div class="bg-white backdrop-blur rounded-lg shadow-lg p-6">
+                    <h2 class="text-primary-700 text-2xl font-bold mb-4">¿Qué es la instalación multifamiliar de gas?
+                    </h2>
+
+                    <!-- Descripción principal -->
+                    <p class="text-primary-700 mb-6">
+                      La instalación multifamiliar de gas se diseña para abastecer a varias viviendas dentro de un
+                      edificio o condominio desde un sistema centralizado, asegurando que cada unidad tenga un
+                      suministro individualizado, seguro y eficiente de gas natural o GLP.
+                    </p>
+
+                    <!-- Grid de características -->
+                    <h3 class="text-primary-700 text-xl font-semibold mb-4">Aplicaciones principales:</h3>
+                    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
+                      <!-- Edificios -->
+                      <div
+                        class="bg-blue-50 rounded-lg p-4 text-center transform hover:scale-105 transition-transform duration-200">
+                        <div class="flex justify-center mb-2">
+                          <i class="fas fa-building text-4xl text-blue-600"></i>
+                        </div>
+                        <h4 class="text-primary-700 font-medium">Edificios</h4>
+                      </div>
+
+                      <!-- Condominios -->
+                      <div
+                        class="bg-blue-50 rounded-lg p-4 text-center transform hover:scale-105 transition-transform duration-200">
+                        <div class="flex justify-center mb-2">
+                          <i class="fas fa-home text-4xl text-blue-600"></i>
+                        </div>
+                        <h4 class="text-primary-700 font-medium">Condominios</h4>
+                      </div>
+
+                      <!-- Conjuntos Residenciales -->
+                      <div
+                        class="bg-blue-50 rounded-lg p-4 text-center transform hover:scale-105 transition-transform duration-200">
+                        <div class="flex justify-center mb-2">
+                          <i class="fas fa-city text-4xl text-blue-600"></i>
+                        </div>
+                        <h4 class="text-primary-700 font-medium">Conjuntos</h4>
+                      </div>
+
+                      <!-- Apartamentos -->
+                      <div
+                        class="bg-blue-50 rounded-lg p-4 text-center transform hover:scale-105 transition-transform duration-200">
+                        <div class="flex justify-center mb-2">
+                          <i class="fas fa-door-closed text-4xl text-blue-600"></i>
+                        </div>
+                        <h4 class="text-primary-700 font-medium">Apartamentos</h4>
+                      </div>
+
+                      <!-- Otros -->
+                      <div
+                        class="bg-blue-50 rounded-lg p-4 text-center transform hover:scale-105 transition-transform duration-200">
+                        <div class="flex justify-center mb-2">
+                          <i class="fas fa-plus text-4xl text-blue-600"></i>
+                        </div>
+                        <h4 class="text-primary-700 font-medium">Otros</h4>
+                      </div>
+                    </div>
+
+                    <!-- Beneficios clave -->
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-6">
+                      <div class="border border-blue-100 rounded-lg p-4">
+                        <div class="flex items-center mb-2">
+                          <i class="fas fa-coins text-green-500 mr-2"></i>
+                          <span class="text-primary-700 font-medium">Ahorro en Costos</span>
+                        </div>
+                      </div>
+                      <div class="border border-blue-100 rounded-lg p-4">
+                        <div class="flex items-center mb-2">
+                          <i class="fas fa-calculator text-green-500 mr-2"></i>
+                          <span class="text-primary-700 font-medium">Facturación Individual</span>
+                        </div>
+                      </div>
+                      <div class="border border-blue-100 rounded-lg p-4">
+                        <div class="flex items-center mb-2">
+                          <i class="fas fa-shield-alt text-green-500 mr-2"></i>
+                          <span class="text-primary-700 font-medium">Máxima Seguridad</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Columna de imagen -->
+                <div class="lg:block">
+                  <div class="relative h-full rounded-lg overflow-hidden shadow-xl">
+                    <img src="https://cdn.pixabay.com/photo/2017/04/25/23/32/condominium-2261152_1280.jpg"
+                      alt="Instalación de gas multifamiliar" class="w-full h-full object-cover rounded-lg" />
+                      
+                  </div>
+                  
+
+                  <!-- Botón -->
+                  <div class="mt-4 text-center">
+                    <a href="contacto.html" class="inline-block mt-4">
+                      <button
+                        class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-full transform transition-transform hover:scale-105 shadow-lg text-lg">
+                        <i class="fas fa-file-signature mr-2"></i> <!-- Icono para consulta -->
+                        Consultar por instalación
+                      </button>
+                    </a>
+                    <a href="https://api.whatsapp.com/send?phone=51999393895&text=¡Hola!%20Me%20gustaría%20obtener%20más%20información."
+                      target="_blank" class="inline-block mt-4">
+                      <button
+                        class="bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-8 rounded-full transform transition-transform hover:scale-105 shadow-lg text-lg">
+                        <i class="fab fa-whatsapp mr-2"></i> <!-- Icono de WhatsApp -->
+                        Escribir Mensaje
+                      </button>
+                    </a>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </header>
+        </div>
+
+        <!-- Descripción General -->
+        <section class="container mx-auto px-4 py-8">
+          <!-- Pasos de Instalación -->
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- Paso 1 -->
+            <div
+              class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-200">
+              <div class="bg-blue-600 text-white rounded-lg shadow-lg overflow-hidden">
+                <div class="flex items-center p-4">
+                  <div class="w-1/4 flex justify-center px-2">
+                    <i class="fas fa-clipboard-check text-4xl"></i>
+                  </div>
+                  <div class="w-3/4 pl-4">
+                    <h3 class="text-xl font-bold">PASO 1</h3>
+                    <p class="font-medium">EVALUACIÓN Y DISEÑO</p>
+                  </div>
+                </div>
+              </div>
+              <div class="p-4">
+                <p class="text-gray-600">Inspección técnica y diseño del sistema centralizado.</p>
+              </div>
+            </div>
+
+            <!-- Paso 2 -->
+            <div
+              class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-200">
+              <div class="bg-blue-600 text-white rounded-lg shadow-lg overflow-hidden">
+                <div class="flex items-center p-4">
+                  <div class="w-1/4 flex justify-center px-2">
+                    <i class="fas fa-network-wired text-4xl"></i>
+                  </div>
+                  <div class="w-3/4 pl-4">
+                    <h3 class="text-xl font-bold">PASO 2</h3>
+                    <p class="font-medium">INFRAESTRUCTURA EXTERNA</p>
+                  </div>
+                </div>
+              </div>
+              <div class="p-4">
+                <p class="text-gray-600">Conexión al suministro principal y red externa.</p>
+              </div>
+            </div>
+
+            <!-- Paso 3 -->
+            <div
+              class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-200">
+              <div class="bg-blue-600 text-white rounded-lg shadow-lg overflow-hidden">
+                <div class="flex items-center p-4">
+                  <div class="w-1/4 flex justify-center px-2">
+                    <i class="fas fa-tools text-4xl"></i>
+                  </div>
+                  <div class="w-3/4 pl-4">
+                    <h3 class="text-xl font-bold">PASO 3</h3>
+                    <p class="font-medium">INFRAESTRUCTURA INTERNA</p>
+                  </div>
+                </div>
+              </div>
+              <div class="p-4">
+                <p class="text-gray-600">Instalación de redes y medidores individuales.</p>
+              </div>
+            </div>
+
+            <!-- Paso 4 -->
+            <div
+              class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-200">
+              <div class="bg-blue-600 text-white rounded-lg shadow-lg overflow-hidden">
+                <div class="flex items-center p-4">
+                  <div class="w-1/4 flex justify-center px-2">
+                    <i class="fas fa-plug text-4xl"></i>
+                  </div>
+                  <div class="w-3/4 pl-4">
+                    <h3 class="text-xl font-bold">PASO 4</h3>
+                    <p class="font-medium">CONEXIONES INDIVIDUALES</p>
+                  </div>
+                </div>
+              </div>
+              <div class="p-4">
+                <p class="text-gray-600">Conexión a cada vivienda y sus artefactos.</p>
+              </div>
+            </div>
+
+            <!-- Paso 5 -->
+            <div
+              class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-200">
+              <div class="bg-blue-600 text-white rounded-lg shadow-lg overflow-hidden">
+                <div class="flex items-center p-4">
+                  <div class="w-1/4 flex justify-center px-2">
+                    <i class="fas fa-vial text-4xl"></i>
+                  </div>
+                  <div class="w-3/4 pl-4">
+                    <h3 class="text-xl font-bold">PASO 5</h3>
+                    <p class="font-medium">PRUEBAS Y CERTIFICACIÓN</p>
+                  </div>
+                </div>
+              </div>
+              <div class="p-4">
+                <p class="text-gray-600">Verificación de seguridad y certificación.</p>
+              </div>
+            </div>
+
+            <!-- Paso 6 -->
+            <div
+              class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-200">
+              <div class="bg-blue-600 text-white rounded-lg shadow-lg overflow-hidden">
+                <div class="flex items-center p-4">
+                  <div class="w-1/4 flex justify-center px-2">
+                    <i class="fas fa-check-circle text-4xl"></i>
+                  </div>
+                  <div class="w-3/4 pl-4">
+                    <h3 class="text-xl font-bold">PASO 6</h3>
+                    <p class="font-medium">HABILITACIÓN</p>
+                  </div>
+                </div>
+              </div>
+              <div class="p-4">
+                <p class="text-gray-600">Puesta en marcha del sistema centralizado.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Sección de Características Especiales -->
+          <div class="mt-8 grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="bg-white rounded-lg shadow-lg p-6">
+              <h3 class="text-xl font-bold text-primary-700 mb-4">Sistema Centralizado</h3>
+              <p class="text-gray-600">Distribución eficiente desde una fuente central a todas las viviendas.</p>
+            </div>
+
+            <div class="bg-white rounded-lg shadow-lg p-6">
+              <h3 class="text-xl font-bold text-primary-700 mb-4">Medición Individual</h3>
+              <p class="text-gray-600">Cada vivienda controla y paga su propio consumo.</p>
+            </div>
+
+            <div class="bg-white rounded-lg shadow-lg p-6">
+              <h3 class="text-xl font-bold text-primary-700 mb-4">Alta Seguridad</h3>
+              <p class="text-gray-600">Cumplimiento de estrictas normas de seguridad y calidad.</p>
+            </div>
+          </div>
+
+          <!-- Sección de Video Testimonial -->
+          <div class="mt-8 bg-white rounded-lg shadow-lg p-6">
+            <h2 class="text-2xl font-bold mb-4">Testimonios de Nuestros Clientes</h2>
+            <div class="aspect-w-16 aspect-h-9">
+              <img src="/api/placeholder/800/450" alt="Video testimonial placeholder"
+                class="rounded-lg w-full h-64 object-cover" />
+            </div>
+          </div>
+        </section>
+      </div>
+      <!-- CONTENIDO INDUSTRIAL -->
+      <div id="industrial" class="tab-pane hidden transition-opacity duration-300">
+        <div class="bg-primary-600 mx-auto px-6 py-10">
+          <!-- Hero Section -->
+          <header class="text-white">
+            <div class="container mx-auto px-4">
+              <!-- Grid de dos columnas -->
+              <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+                <!-- Columna de texto -->
+                <div class="space-y-7 py-2">
+                  <div>
+                    <h1 class="text-4xl font-bold mb-4">Instalación Industrial de Gas</h1>
+                    <p class="text-xl">Soluciones especializadas para su industria</p>
+                  </div>
+
+                  <div class="bg-white backdrop-blur rounded-lg shadow-lg p-6">
+                    <h2 class="text-primary-700 text-2xl font-bold mb-4">¿Qué es la instalación de gas industrial?</h2>
+
+                    <!-- Descripción principal -->
+                    <p class="text-primary-700 mb-6">
+                      La instalación industrial de gas natural es un proceso complejo que requiere un diseño
+                      especializado y la intervención de técnicos calificados para garantizar un suministro seguro,
+                      eficiente y adecuado a las necesidades específicas de una empresa o industria.
+                    </p>
+
+                    <!-- Grid de establecimientos -->
+                    <h3 class="text-primary-700 text-xl font-semibold mb-4">Ideal para establecimientos como:</h3>
+                    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
+                      <!-- Fábricas -->
+                      <div
+                        class="bg-blue-50 rounded-lg p-4 text-center transform hover:scale-105 transition-transform duration-200">
+                        <div class="flex justify-center mb-2">
+                          <i class="fas fa-industry text-4xl text-blue-600"></i>
+                        </div>
+                        <h4 class="text-primary-700 font-medium">Fábricas</h4>
+                      </div>
+
+                      <!-- Plantas de Producción -->
+                      <div
+                        class="bg-blue-50 rounded-lg p-4 text-center transform hover:scale-105 transition-transform duration-200">
+                        <div class="flex justify-center mb-2">
+                          <i class="fas fa-warehouse text-4xl text-blue-600"></i>
+                        </div>
+                        <h4 class="text-primary-700 font-medium">Plantas</h4>
+                      </div>
+
+                      <!-- Siderúrgicas -->
+                      <div
+                        class="bg-blue-50 rounded-lg p-4 text-center transform hover:scale-105 transition-transform duration-200">
+                        <div class="flex justify-center mb-2">
+                          <i class="fas fa-fire text-4xl text-blue-600"></i>
+                        </div>
+                        <h4 class="text-primary-700 font-medium">Siderúrgicas</h4>
+                      </div>
+
+                      <!-- Metalúrgicas -->
+                      <div
+                        class="bg-blue-50 rounded-lg p-4 text-center transform hover:scale-105 transition-transform duration-200">
+                        <div class="flex justify-center mb-2">
+                          <i class="fas fa-cogs text-4xl text-blue-600"></i>
+                        </div>
+                        <h4 class="text-primary-700 font-medium">Metalúrgicas</h4>
+                      </div>
+
+                      <!-- Otros -->
+                      <div
+                        class="bg-blue-50 rounded-lg p-4 text-center transform hover:scale-105 transition-transform duration-200">
+                        <div class="flex justify-center mb-2">
+                          <i class="fas fa-building text-4xl text-blue-600"></i>
+                        </div>
+                        <h4 class="text-primary-700 font-medium">Otros</h4>
+                      </div>
+                    </div>
+
+                    <!-- Beneficios clave -->
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-6">
+                      <div class="border border-blue-100 rounded-lg p-4">
+                        <div class="flex items-center mb-2">
+                          <i class="fas fa-chart-line text-green-500 mr-2"></i>
+                          <span class="text-primary-700 font-medium">Alta Eficiencia</span>
+                        </div>
+                      </div>
+                      <div class="border border-blue-100 rounded-lg p-4">
+                        <div class="flex items-center mb-2">
+                          <i class="fas fa-leaf text-green-500 mr-2"></i>
+                          <span class="text-primary-700 font-medium">Menor Impacto Ambiental</span>
+                        </div>
+                      </div>
+                      <div class="border border-blue-100 rounded-lg p-4">
+                        <div class="flex items-center mb-2">
+                          <i class="fas fa-shield-alt text-green-500 mr-2"></i>
+                          <span class="text-primary-700 font-medium">Máxima Seguridad</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Columna de imagen -->
+                <div class="lg:block">
+                  <div class="relative h-full rounded-lg overflow-hidden shadow-xl">
+                    <img src="https://cdn.pixabay.com/photo/2017/09/25/11/55/fittings-2784902_1280.jpg"
+                      alt="Instalación de gas industrial" class="w-full h-full object-cover rounded-lg" />
+                  </div>
+                  <!-- Botón -->
+                  <div class="mt-4 text-center">
+                    <a href="contacto.html" class="inline-block mt-4">
+                      <button
+                        class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-full transform transition-transform hover:scale-105 shadow-lg text-lg">
+                        <i class="fas fa-file-signature mr-2"></i> <!-- Icono para consulta -->
+                        Consultar por instalación
+                      </button>
+                    </a>
+                    <a href="https://api.whatsapp.com/send?phone=51999393895&text=¡Hola!%20Me%20gustaría%20obtener%20más%20información."
+                      target="_blank" class="inline-block mt-4">
+                      <button
+                        class="bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-8 rounded-full transform transition-transform hover:scale-105 shadow-lg text-lg">
+                        <i class="fab fa-whatsapp mr-2"></i> <!-- Icono de WhatsApp -->
+                        Escribir Mensaje
+                      </button>
+                    </a>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </header>
+        </div>
+
+        <!-- Descripción General -->
+        <section class="container mx-auto px-4 py-8">
+          <!-- Pasos de Instalación -->
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- Paso 1 -->
+            <div
+              class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-200">
+              <div class="bg-blue-600 text-white rounded-lg shadow-lg overflow-hidden">
+                <div class="flex items-center p-4">
+                  <div class="w-1/4 flex justify-center px-2">
+                    <i class="fas fa-search text-4xl"></i>
+                  </div>
+                  <div class="w-3/4 pl-4">
+                    <h3 class="text-xl font-bold">PASO 1</h3>
+                    <p class="font-medium">EVALUACIÓN INICIAL Y DISEÑO</p>
+                  </div>
+                </div>
+              </div>
+              <div class="p-4">
+                <p class="text-gray-600">Estudio técnico completo y diseño especializado del sistema.</p>
+              </div>
+            </div>
+
+            <!-- Paso 2 -->
+            <div
+              class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-200">
+              <div class="bg-blue-600 text-white rounded-lg shadow-lg overflow-hidden">
+                <div class="flex items-center p-4">
+                  <div class="w-1/4 flex justify-center px-2">
+                    <i class="fas fa-network-wired text-4xl"></i>
+                  </div>
+                  <div class="w-3/4 pl-4">
+                    <h3 class="text-xl font-bold">PASO 2</h3>
+                    <p class="font-medium">INFRAESTRUCTURA EXTERNA</p>
+                  </div>
+                </div>
+              </div>
+              <div class="p-4">
+                <p class="text-gray-600">Instalación de EMR y conexión a la red principal.</p>
+              </div>
+            </div>
+
+            <!-- Paso 3 -->
+            <div
+              class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-200">
+              <div class="bg-blue-600 text-white rounded-lg shadow-lg overflow-hidden">
+                <div class="flex items-center p-4">
+                  <div class="w-1/4 flex justify-center px-2">
+                    <i class="fas fa-tools text-4xl"></i>
+                  </div>
+                  <div class="w-3/4 pl-4">
+                    <h3 class="text-xl font-bold">PASO 3</h3>
+                    <p class="font-medium">INFRAESTRUCTURA INTERNA</p>
+                  </div>
+                </div>
+              </div>
+              <div class="p-4">
+                <p class="text-gray-600">Instalación de tuberías y sistemas de seguridad internos.</p>
+              </div>
+            </div>
+
+            <!-- Paso 4 -->
+            <div
+              class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-200">
+              <div class="bg-blue-600 text-white rounded-lg shadow-lg overflow-hidden">
+                <div class="flex items-center p-4">
+                  <div class="w-1/4 flex justify-center px-2">
+                    <i class="fas fa-vial text-4xl"></i>
+                  </div>
+                  <div class="w-3/4 pl-4">
+                    <h3 class="text-xl font-bold">PASO 4</h3>
+                    <p class="font-medium">PRUEBAS Y CERTIFICACIÓN</p>
+                  </div>
+                </div>
+              </div>
+              <div class="p-4">
+                <p class="text-gray-600">Pruebas de hermeticidad y certificación del sistema.</p>
+              </div>
+            </div>
+
+            <!-- Paso 5 -->
+            <div
+              class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-200">
+              <div class="bg-blue-600 text-white rounded-lg shadow-lg overflow-hidden">
+                <div class="flex items-center p-4">
+                  <div class="w-1/4 flex justify-center px-2">
+                    <i class="fas fa-check-circle text-4xl"></i>
+                  </div>
+                  <div class="w-3/4 pl-4">
+                    <h3 class="text-xl font-bold">PASO 5</h3>
+                    <p class="font-medium">PUESTA EN MARCHA</p>
+                  </div>
+                </div>
+              </div>
+              <div class="p-4">
+                <p class="text-gray-600">Activación y pruebas finales del sistema.</p>
+              </div>
+            </div>
+
+            <!-- Paso 6 -->
+            <div
+              class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-200">
+              <div class="bg-blue-600 text-white rounded-lg shadow-lg overflow-hidden">
+                <div class="flex items-center p-4">
+                  <div class="w-1/4 flex justify-center px-2">
+                    <i class="fas fa-wrench text-4xl"></i>
+                  </div>
+                  <div class="w-3/4 pl-4">
+                    <h3 class="text-xl font-bold">PASO 6</h3>
+                    <p class="font-medium">MANTENIMIENTO</p>
+                  </div>
+                </div>
+              </div>
+              <div class="p-4">
+                <p class="text-gray-600">Mantenimiento preventivo y atención continua.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Sección de Características Especiales -->
+          <div class="mt-8 grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="bg-white rounded-lg shadow-lg p-6">
+              <h3 class="text-xl font-bold text-primary-700 mb-4">Alto Rendimiento</h3>
+              <p class="text-gray-600">Sistemas diseñados para procesos industriales que requieren energía constante.
+              </p>
+            </div>
+
+            <div class="bg-white rounded-lg shadow-lg p-6">
+              <h3 class="text-xl font-bold text-primary-700 mb-4">Seguridad Avanzada</h3>
+              <p class="text-gray-600">Sistemas de detección y respuesta a emergencias integrados.</p>
+            </div>
+
+            <div class="bg-white rounded-lg shadow-lg p-6">
+              <h3 class="text-xl font-bold text-primary-700 mb-4">Eficiencia Económica</h3>
+              <p class="text-gray-600">Menor costo operativo comparado con otros combustibles industriales.</p>
+            </div>
+          </div>
+
+          <!-- Sección de Video Testimonial -->
+          <div class="mt-8 bg-white rounded-lg shadow-lg p-6">
+            <h2 class="text-2xl font-bold mb-4">Testimonios de Nuestros Clientes Industriales</h2>
+            <div class="aspect-w-16 aspect-h-9">
+              <img src="/api/placeholder/800/450" alt="Video testimonial placeholder"
+                class="rounded-lg w-full h-64 object-cover" />
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+    </div>
+    </div>
+
+
+  </main>
+
+  <footer class="bg-primary-800 text-white py-8 px-6 text-sm">
+    <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
+
+      <!-- Columna 1: Mapa de ubicación -->
+      <div>
+        <h3 class="font-bold">UBICACIÓN</h3>
+        <div class="mt-4">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d867.7805430897275!2d-76.98246779320944!3d-12.078488156171447!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTLCsDA0JzQyLjgiUyA3NsKwNTgnNTUuNSJX!5e1!3m2!1ses-419!2spe!4v1737578493213!5m2!1ses-419!2spe"
+            width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+      </div>
+
+      <!-- Columna 2: Información de la empresa, Teléfonos y Redes Sociales -->
+      <div class="max-w-2xl mx-auto p-8">
+        <!-- Encabezado -->
+        <div class="text-center mb-8">
+          <h3 class="text-3xl font-bold mb-2">GRUPO KAIZEN</h3>
+        </div>
+
+        <!-- Grid de información de contacto -->
+        <div class="grid md:grid-cols-2 gap-6 mb-8">
+          <!-- Columna izquierda -->
+          <div class="space-y-4">
+            <div class="p-4 rounded-lg">
+              <p class="flex items-center">
+                <i class="fas fa-map-marker-alt w-6 h-6 mr-3"></i>
+                <span class="text-sm">Jr. Bartolomé Ruiz 293, Urb. Salamanca de Monterrico,
+                  Ate</span>
+              </p>
+            </div>
+            <div class="p-4 rounded-lg">
+              <p class="flex items-center">
+                <i class="fas fa-envelope w-6 h-6 mr-3"></i>
+                <a href="mailto:info@kaizen.com" class="text-sm hover:underline">info@kaizen.com</a>
+              </p>
+            </div>
+          </div>
+
+          <!-- Columna derecha -->
+          <div class="space-y-4">
+            <div class="p-4 rounded-lg">
+              <p class="flex items-center">
+                <i class="fas fa-phone w-6 h-6 mr-3"></i>
+                <span>
+                  <span class="text-sm text-gray-50">Central Telefónica</span>
+                  <span class="block text-sm">01-6828303</span>
+                </span>
+              </p>
+            </div>
+            <div class="p-4 rounded-lg">
+              <p class="flex items-center">
+                <i class="fab fa-whatsapp w-6 h-6 mr-3"></i>
+                <span>
+                  <span class="text-sm text-gray-50">WhatsApp/Celular</span>
+                  <span class="block text-sm">959363858</span>
+                </span>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Redes sociales -->
+        <div class="text-center">
+          <h3 class="text-2xl font-bold mb-6">SÍGUENOS</h3>
+          <div class="flex justify-center items-center gap-6">
+            <a href="#" class="hover:opacity-75">
+              <i class="fab fa-linkedin text-2xl"></i>
+              <span class="sr-only">LinkedIn</span>
+            </a>
+            <a href="#" class="hover:opacity-75">
+              <i class="fab fa-facebook text-2xl"></i>
+              <span class="sr-only">Facebook</span>
+            </a>
+            <a href="#" class="hover:opacity-75">
+              <i class="fab fa-instagram text-2xl"></i>
+              <span class="sr-only">Instagram</span>
+            </a>
+            <a href="#" class="hover:opacity-75">
+              <i class="fab fa-youtube text-2xl"></i>
+              <span class="sr-only">YouTube</span>
+            </a>
+            <a href="#" class="hover:opacity-75">
+              <i class="fab fa-tiktok text-2xl"></i>
+              <span class="sr-only">TikTok</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Línea divisoria -->
+    <div class="border-t border-gray-400 mt-8 pt-4 text-center text-xs">
+      ©2025 KAIZEN - Todos los derechos reservados.
+    </div>
+  </footer>
+  <!-- Scripts-->
+
+  <script>
+    // Control del tooltip
+    const tooltip = document.getElementById('whatsapp-tooltip');
+    const showTooltip = () => tooltip.classList.replace('hidden', 'block');
+    const hideTooltip = () => tooltip.classList.replace('block', 'hidden');
+
+    // Función para mostrar el tooltip por 5 segundos
+    const displayTooltip = () => {
+      showTooltip();
+      setTimeout(hideTooltip, 5000); // Ocultar después de 5 segundos
+    };
+
+    // Mostrar tooltip al cargar la página
+    document.addEventListener('DOMContentLoaded', () => {
+      setTimeout(displayTooltip, 1000); // Mostrar después de 1 segundo de carga
+    });
+    // Mostrar tooltip cada 5 minutos
+    setInterval(displayTooltip, 300000); // 300000 ms = 5 minutos
+
+    // Mantener el comportamiento del hover
+    const whatsappContainer = tooltip.parentElement;
+    whatsappContainer.addEventListener('mouseenter', showTooltip);
+    whatsappContainer.addEventListener('mouseleave', hideTooltip);
+  </script>
+
+  <!-- START SCRIPT NAV -->
+  <script>
+    // Get the navbar
+    const mainNav = document.getElementById("main-nav");
+    const topNav = mainNav.previousElementSibling;
+    const mobileMenu = document.getElementById("mobile-menu");
+    const menuToggle = document.getElementById("menu-toggle");
+    let lastScrollY = window.scrollY;
+
+    // Get the height of the top navigation
+    const topNavHeight = topNav.offsetHeight;
+
+    // Function to collapse mobile menu
+    const collapseMobileMenu = () => {
+      mobileMenu.classList.add("hidden");
+    };
+
+    // Add scroll event listener
+    window.addEventListener("scroll", function () {
+      const currentScrollY = window.scrollY;
+
+      if (currentScrollY > topNavHeight) {
+        // Scrolling down past the top nav
+        mainNav.classList.add("fixed", "top-0", "shadow-md", "z-50");
+        document.body.style.paddingTop = mainNav.offsetHeight + "px";
+      } else {
+        // Scrolling back up
+        mainNav.classList.remove("fixed", "top-0", "shadow-md", "z-50");
+        document.body.style.paddingTop = "0";
+      }
+
+      lastScrollY = currentScrollY;
+    });
+
+    // Mobile menu toggle
+    menuToggle.addEventListener("click", () => {
+      mobileMenu.classList.toggle("hidden");
+    });
+
+    // Add click event listeners to all menu items
+    const menuItems = mobileMenu.querySelectorAll('a');
+    menuItems.forEach(item => {
+      item.addEventListener('click', () => {
+        collapseMobileMenu();
+      });
+    });
+
+    // Optional: Close menu when clicking outside
+    document.addEventListener('click', (event) => {
+      const isClickInsideMenu = mobileMenu.contains(event.target);
+      const isClickOnToggle = menuToggle.contains(event.target);
+
+      if (!isClickInsideMenu && !isClickOnToggle && !mobileMenu.classList.contains('hidden')) {
+        collapseMobileMenu();
+      }
+    });
+  </script>
+  <!-- END SCRIPT NAV -->
+  <!-- END SCRIPT NAV -->
+
+  <!-- SCRIPT MENU PESTAÑA-->
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const tabs = document.querySelectorAll('[role="tab"]');
+      const tabPanes = document.querySelectorAll('.tab-pane');
+
+      tabs.forEach(tab => {
+        tab.addEventListener('click', function () {
+          // Remover clases activas de todas las pestañas
+          tabs.forEach(t => {
+            t.classList.remove('bg-white', 'shadow-lg', 'text-primary-600');
+            t.classList.add('text-gray-600');
+            t.setAttribute('aria-selected', 'false');
+          });
+
+          // Activar la pestaña seleccionada
+          this.classList.remove('text-gray-600');
+          this.classList.add('bg-white', 'shadow-lg', 'text-primary-600');
+          this.setAttribute('aria-selected', 'true');
+
+          // Ocultar todos los contenidos
+          tabPanes.forEach(pane => {
+            pane.classList.add('hidden');
+            pane.classList.remove('opacity-100');
+          });
+
+          // Mostrar el contenido seleccionado
+          const target = this.getAttribute('data-target');
+          const activePane = document.getElementById(target);
+          if (activePane) {
+            activePane.classList.remove('hidden');
+            // Pequeño timeout para la animación
+            setTimeout(() => {
+              activePane.classList.add('opacity-100');
+            }, 50);
+          }
+        });
+      });
+    });
+  </script>
+
+</body>
+
+</html>
